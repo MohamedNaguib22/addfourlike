@@ -4,8 +4,12 @@
 
 @layer {
   .btn {
-    @apply bg-blue-600 py-[16px] px-[26px] rounded-lg
+    @apply bg-blue-600 py-[16px] px-[26px] rounded-lg;
   }
+}
+
+.Responsive {
+  @apply grid grid-cols-1 lg:grid-cols-2 relative items-center;
 }
 
 .container {
@@ -14,21 +18,4 @@
 
 body {
   @apply text-gray-400
-}
-
-@layer {
-  .btn {
-    @apply w-[100px] h-[40px] bg-green-500 flex justify-center items-center rounded-lg font-medium text-[16px] transition-all duration-[.3s] hover:bg-green-400;
-  }
-
-  td {
-    @apply bg-green-200 text-center w-full text-black font-medium text-[18px] py-[20px]
-  }
-  
-}
-::selection {
-  @apply bg-green-400 text-white
-}
-.Forms {
-  height: calc(100vh - 65px);
 }

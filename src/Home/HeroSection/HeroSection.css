@@ -1,0 +1,12 @@
+.Hero {
+  mix-blend-mode: multiply;
+}
+
+.HeroFont {
+  font-family: 'Pangolin', cursive;
+}
+
+.BtnHero {
+  background: linear-gradient(270deg, #3441F4 0%, #4D5DFC 74.27%, #4D5DFC 74.27%, #5060FD 81.32%, #5060FD 81.32%, #5262FE 87.49%, #5262FE 87.49%, #5667FF 100%);
+  box-shadow: 0px 20px 20px 0px #F4347B4F;
+}

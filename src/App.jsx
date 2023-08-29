@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Routes } from "react-router-dom";
+import { Pages } from "./Pages/Pages";
+// import { Routes } from "react-router-dom";
 export default function App() {
   useEffect(() => {
     AOS.init({
@@ -11,9 +12,7 @@ export default function App() {
   }, []);
   return (
     <>
-      <Routes>
-        <></>
-      </Routes>
+      <Pages />
     </>
   );
 }

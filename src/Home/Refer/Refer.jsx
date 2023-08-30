@@ -2,7 +2,7 @@ import "./Refer.css";
 import BgRefer from '../../../public/Assets/img/bgWoman2.png'
 export const Refer = () => {
   return (
-    <div className="h-auto relative">
+    <div className="h-auto relative pb-[100px]">
       <div className="BgRefer top-[-10%] h-full bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1100.49px] absolute left-0"></div>
       <div className="grid lg:grid-cols-3 grid-cols-1 relative items-center container justify-center h-screen">
         <div className="col-span-2">

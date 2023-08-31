@@ -5,11 +5,14 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 import { CiBasketball } from "react-icons/ci";
 import { useContext } from "react";
 import { PopUp } from "../../Context/Context";
+import Navbar from "../../Pages/Navbar/Navbar";
+import "../../Pages/Navbar/Navbar.css"
 export const HeroSection = () => {
   const contextPop = useContext(PopUp);
   const functionModel = contextPop.ModelUp;
   return (
     <>
+      <Navbar  border="text-white  border-2 border-white" />
       <div className=" h-auto">
         <div className="BgHeroSection h-[880px] bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1270px] top-[-2%] absolute right-0"></div>
         <div className="Responsive container mt-[120px] lg:py-[100px] ">

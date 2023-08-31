@@ -8,7 +8,7 @@ export const Refer = () => {
           <img src={BgRefer} alt="BgRefer" className="max-w-full h-auto" />
         </div>
         <div className="lg:text-start text-center w-[80%] lg:pr-[60px] mx-auto lg:mt-[150px]">
-          <h1 className="text-black font-[400] leading-[80px] text-[55px]">
+          <h1 className="text-black font-[400] leading-[80px]  text-[45px] lg:text-[55px]">
             Refer & Earn
           </h1>
           <h3 className="text-black w-full font-[400] leading-[80px] lg:text-[25px]">

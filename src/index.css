@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-  .btn {
-    @apply bg-blue-600 py-[16px] px-[26px] rounded-lg;
-  }
-}
-
 .Responsive {
   @apply grid grid-cols-1 lg:grid-cols-2 relative items-center;
 }
@@ -16,6 +10,13 @@
   @apply mx-auto
 }
 
-body {
-  @apply text-gray-400
+.LgLgBorder {
+  @apply before:content-[''] lg:before:block before:hidden before:absolute before:right-[10%] lg:before:right-[-8%] before:top-[50%] before:translate-y-[-50%] before:border-[transparent_transparent_transparent_#F3F4F6] before:border-[24px]
+}
+
+.MobileBorder {
+  @apply after:content-[''] after:block lg:after:hidden after:absolute  after:top-[50%] after:translate-y-[-50%] after:border-[transparent_#F3F4F6_transparent_transparent] after:border-[24px]
+}
+.MobileBorder2 {
+  @apply after:content-[''] before:block  after:absolute  lg:after:left-[-8%] after:top-[50%] after:translate-y-[-50%] after:border-[transparent_#F3F4F6_transparent_transparent] after:border-[24px]
 }

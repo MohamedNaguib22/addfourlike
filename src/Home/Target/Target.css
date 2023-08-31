@@ -1,0 +1,39 @@
+@media only screen and (min-width : 992px) and (max-width : 1400px) {
+  .MediaCard {
+    top: 12%;
+  }
+  .MediaCard2 {
+    top: 27%;
+  }
+  .MediaCard3 {
+    top: 46%;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+  .MobileBorder::after {
+    left: -8% !important;
+  }
+  .MobileBorder2::after {
+    left: -8% !important;
+  }
+}
+@media (max-width : 767px) {
+  .MobileBorder::after {
+      left: -10% !important;
+    }
+  
+    .MobileBorder2::after {
+      left: -10% !important;
+    }
+}
+@media (max-width : 991px) {
+  .MediaCard {
+    top: 8%;
+  }
+  .MediaCard2 {
+    top: 22%;
+  }
+  .MediaCard3 {
+    top: 36%;
+  }
+}

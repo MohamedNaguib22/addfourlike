@@ -1,22 +1,27 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import logo from "../../../public/Assets/img/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
-import { useState } from "react";
-const Navbar = () => {
+import { useContext, useState } from "react";
+import { PopUp } from "../../Context/Context";
+const Navbar = (props) => {
   const [nav, setNav] = useState(false);
+  const contextPop = useContext(PopUp);
+  const functionModel = contextPop.ModelUp;
   function clickNAv() {
     setNav(!nav);
   }
   return (
-    <div className="relative z-[5] ">
-      <div className="flex justify-between items-center container leading-[21.78px] pt-[27px] h-[47] Font font-[400] text-white text-[18px] relative ">
+    <div className={`relative z-[5] ${props.class}`}>
+      <div className="flex justify-between items-center container leading-[21.78px] p-[27px] h-[80px] Font font-[400] text-white text-[18px] relative">
         <div>
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
         </div>
-        <ul className="hidden items-center gap-[85px] lg:flex ">
+        <ul
+          className={`hidden items-center gap-[85px] lg:flex ${props.color}`}>
           <li>
             <a href="#" className="uppercase">
               services
@@ -34,7 +39,10 @@ const Navbar = () => {
           </li>
         </ul>
         <div>
-          <button className="uppercase hidden lg:flex justify-center items-center w-[173px] h-[47px] border-2 border-white rounded-[24px] ">
+          <button
+            onClick={functionModel}
+            className={`uppercase hidden lg:flex justify-center items-center w-[173px] h-[47px] rounded-[24px] ${props.border}`}
+          >
             login
           </button>
         </div>
@@ -72,7 +80,10 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="flex items-center justify-center">
-            <button className="uppercase h-[47px] border-2 border-black w-[173px] flex items-center justify-center  rounded-[24px] ">
+            <button
+              onClick={functionModel}
+              className="uppercase h-[47px] border-2 border-black w-[173px] flex items-center justify-center  rounded-[24px] "
+            >
               login
             </button>
           </li>

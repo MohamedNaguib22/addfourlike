@@ -1,12 +1,11 @@
 import { AboutData } from "../../Data/DataAbour/AboutData";
 import { DataAbout } from "../../Data/DataAbour/DataAbout";
-import LogoAbout from "../../../public/Assets/img/Illustration-2.png"
+import LogoAbout from "../../../public/Assets/img/Group1.png";
 import "./About.css"
 export const About = () => {
   return (
     <div className="h-auto py-[100px]">
-      <div className="BgAbout  h-[880px] bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1100.49px] absolute right-0"></div>
-      <div className="Responsive  container justify-center h-screen">
+      <div className="Responsive container justify-center h-screen">
         <div className="lg:text-start text-center">
           <h1 className="text-black text-[35px] leading-[80px] mb-[5px] ">
             Get FREE Facebook Likes, Followers, Share
@@ -24,8 +23,10 @@ export const About = () => {
             })}
           </div>
         </div>
-        <div>
-          <img src={LogoAbout} alt="" />
+        <div
+          className="w-full lg:w-[1116.8px]"
+        >
+          <img src={LogoAbout} className="max-w-full" alt="" />
         </div>
       </div>
     </div>

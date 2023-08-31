@@ -1,18 +1,17 @@
 import "./Refer.css";
-import BgRefer from '../../../public/Assets/img/bgWoman2.png'
+import BgRefer from "../../../public/Assets/img/Group53.png";
 export const Refer = () => {
   return (
-    <div className="h-auto relative pb-[100px]">
-      <div className="BgRefer top-[-10%] h-full bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1100.49px] absolute left-0"></div>
-      <div className="grid lg:grid-cols-3 grid-cols-1 relative items-center container justify-center h-screen">
-        <div className="col-span-2">
-          <img src={BgRefer} alt="BgRefer" className="max-w-full" />
+    <div className="h-auto relative pb-[100px] lg:mt-[-250px]">
+      <div className="grid lg:grid-cols-2 grid-cols-1  h-screen items-center place-items-end">
+        <div className=" mr-[20px] sm:mr-[80px] md:mr-[0] MediaImg">
+          <img src={BgRefer} alt="BgRefer" className="max-w-full h-auto" />
         </div>
-        <div className="lg:text-start text-center">
+        <div className="lg:text-start text-center w-[80%] lg:pr-[60px] mx-auto lg:mt-[150px]">
           <h1 className="text-black font-[400] leading-[80px] text-[55px]">
             Refer & Earn
           </h1>
-          <h3 className="text-black w-full font-[400] leading-[80px] text-[30px]">
+          <h3 className="text-black w-full font-[400] leading-[80px] lg:text-[25px]">
             Earn bonuses by referring others!
           </h3>
           <p className="text-gray-500 text-[18px] leading-[25px] font-[400]">

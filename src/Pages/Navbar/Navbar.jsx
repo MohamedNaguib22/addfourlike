@@ -15,7 +15,7 @@ const Navbar = (props) => {
   return (
     <div className={`relative z-[5] ${props.class}`}>
       <div className="flex justify-between items-center container leading-[21.78px] p-[27px] h-[80px] Font font-[400] text-white text-[18px] relative">
-        <div>
+        <div className="w-[200px] lg:w-full">
           <Link to="/">
             <img src={logo} alt="" />
           </Link>

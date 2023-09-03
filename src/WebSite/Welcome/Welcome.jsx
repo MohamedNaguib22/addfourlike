@@ -1,19 +1,17 @@
 import { FaQuestion } from "react-icons/fa";
+import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
+import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 
 export const Welcome = () => {
   return (
     <div className=" mt-[10px] WelcomeWidth pb-[50px]">
-      <div className="bg-black py-[5px] mb-[8px]">
-        <div className=" justify-center text-white font-bold flex gap-2 text-[18px]">
-          <p>$</p>
-          <p>By buying points with AMF Tokens, you get 50% More</p>
-        </div>
-      </div>
-      <div className="bg-gray-500 py-[10px] mb-[30px]">
-        <h1 className="text-white font-bold flex text-[26px] justify-center">
-          Welcome
-        </h1>
-      </div>
+      <HeaderOne>
+        <p>$</p>
+        <p>By buying points with AMF Tokens, you get 50% More</p>
+      </HeaderOne>
+      <HeaderTwo>
+        <h1 className=" text-[26px]">Welcome</h1>
+      </HeaderTwo>
       <div className="container flex-col flex w-full lg:w-[85%]">
         <h1 className="text-[24px] font-bold justify-center flex">
           Thank You for choosing Add4Like.com
@@ -104,7 +102,9 @@ export const Welcome = () => {
             </h1>
           </div>
           <div className="bg-black px-[10px] py-[30px] w-full mx-auto border-[3px] border-white text-white shadow-xl rounded-md border-dashed ">
-            <h1 className="text-[30px] font-bold mb-[8px]">Facts and Figures:</h1>
+            <h1 className="text-[30px] font-bold mb-[8px]">
+              Facts and Figures:
+            </h1>
             <ul className="px-[20px] list-disc flex flex-col gap-2">
               <li>
                 AddMeFast.com has been online for more than 11

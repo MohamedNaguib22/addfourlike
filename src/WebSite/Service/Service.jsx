@@ -1,8 +1,9 @@
 import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
 import { Tasks } from "../../components/P2PTasks/Tasks";
-export const AddOrder = () => {
+
+export const Service = () => {
   return (
-    <div >
+    <div>
       <HeaderOne>
         <div className="flex items-center gap-2">
           <p>$</p>
@@ -10,7 +11,12 @@ export const AddOrder = () => {
         </div>
       </HeaderOne>
       <Tasks />
-      <p className="text-[14px] font-medium text-center">You have no Tasks to show.</p>
+      <p className="text-[14px] font-medium text-center">
+        There is no performance to show.
+      </p>
+      <a href="#" className="text-[14px] font-medium text-center block">
+        Click here to get tasks.
+      </a>
     </div>
   );
-};
+}

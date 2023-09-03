@@ -5,13 +5,13 @@ import { TopNav } from "../components/TopNav/TopNav";
 import "./Website.css"
 export const WebSite = () => {
   return (
-    <div className=" h-fit bg-[#0000001c]">
+    <div className="bg-[#0000001c]">
       <TopNav />
-      <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-5 h-auto">
-        <div className="col-span-1 relative">
+      <div className="mt-[90px] grid grid-cols-1 lg:grid-cols-6">
+        <div className="col-span-1">
           <LeftSide />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-4 h-auto lg:h-screen">
           <Outlet />
         </div>
         <div className="col-span-1">

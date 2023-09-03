@@ -8,11 +8,15 @@ import { PopUp } from "../Context/Context";
 import { AddOrder } from "../WebSite/AddOrder/AddOrder";
 import { Welcome } from "../WebSite/Welcome/Welcome";
 import { WebSite } from "../WebSite/WebSite";
+import { MyOrder } from "../WebSite/MyOrder/MyOrder";
+import { Service } from "../WebSite/Service/Service";
+import { Wallet } from "../WebSite/Wallet/Wallet";
+import { AddSite } from "../WebSite/AddSite/AddSite";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;
   return (
-    <div >
+    <div>
       <Forms />
       <span
         className={`${
@@ -26,6 +30,10 @@ export const Pages = () => {
             <Route path="welcome" element={<Welcome />} />
             <Route index element={<Welcome />} />
             <Route path="add-order" element={<AddOrder />} />
+            <Route path="my-order" element={<MyOrder />} />
+            <Route path="service" element={<Service />} />
+            <Route path="wallet" element={<Wallet />} />
+            <Route path="add-site" element={<AddSite />} />
           </Route>
         </Routes>
       </span>

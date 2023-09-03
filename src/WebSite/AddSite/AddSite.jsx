@@ -29,7 +29,7 @@ export const AddSite = () => {
           [... Here you can add or edit your content ...]
         </p>
       </HeaderTwo>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mb-[40px]">
         <form className=" w-full lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="Type">
@@ -100,7 +100,7 @@ export const AddSite = () => {
               </label>
               <input
                 type="number"
-                className="py-[8px] text-center w-[90px] rounded-lg border-[2px] border-gray-300"
+                className="py-[8px] text-center w-[120px] rounded-lg border-[2px] border-gray-300"
                 required
                 minLength={2}
                 disabled={!switchBtn ? true : false}
@@ -119,21 +119,17 @@ export const AddSite = () => {
               >
                 {switchBtn ? "on" : "off"}
               </div>
-              <div>
-              </div>
-              <p className="ml-[50px]">
-                dasdasd
-              </p>
             </div>
+            <p className="text-[14px] font-normal">Total clicks limit</p>
           </div>
-          <div className="flex items-center gap-[10px]">
+          <div className="flex items-center gap-[10px] mb-[16px]">
             <div className="flex gap-1">
               <label className="w-[120px] text-right" htmlFor="FB post url">
                 Daily Clicks:
               </label>
               <input
                 type="number"
-                className="py-[8px] text-center w-[90px] rounded-lg border-[2px] border-gray-300"
+                className="py-[8px] text-center w-[120px] rounded-lg border-[2px] border-gray-300"
                 required
                 minLength={2}
                 disabled={!switchBtnTwo ? true : false}
@@ -153,9 +149,41 @@ export const AddSite = () => {
                 {switchBtnTwo ? "on" : "off"}
               </div>
             </div>
+            <p className="text-[14px] font-normal">Daily clicks limit</p>
+          </div>
+          <div className="flex items-center gap-[10px] mb-[16px]">
+            <div className="flex gap-1 items-center">
+              <label className="w-[120px] text-right" htmlFor="FB post url">
+                CPC:
+              </label>
+              <input
+                type="number"
+                className="py-[8px] text-center w-[70px] rounded-lg border-[2px] border-gray-300"
+                required
+                minLength={2}
+              />
+            </div>
+            <p className="text-[12px] font-normal w-[20%]">
+              Cost/Points Per Click (from 5 to 50)
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 grid-cols-1">
+            <button className="text-black underline">Cancel</button>
+            <button className="text-white bg-black w-[200px] ml-[-30px] h-[45px] rounded-lg">
+              Save Change
+            </button>
           </div>
         </form>
       </div>
+      <HeaderOne>
+        <h1 className="text-center font-normal py-[20px] px-[70px]">
+          The higher the CPC of your site/page, the more likely you are to get
+          it seen, which means that the rate of getting likes/followers will be
+          high. You can add an unlimited number of sites/pages. Please read our
+          Terms carefully again so you don`t post content that is prohibited
+          here.
+        </h1>
+      </HeaderOne>
     </div>
   );
 };

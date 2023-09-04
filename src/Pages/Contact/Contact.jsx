@@ -1,8 +1,8 @@
 import { FaEnvelope, FaPhoneAlt, FaTelegram } from "react-icons/fa";
 import { BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { AiFillYoutube } from "react-icons/ai";
-import { Footer } from "../Home/Footer/Footer";
-import Navbar from "../Pages/Navbar/Navbar";
+import { Footer } from "../../Home/Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 export const Contact = () => {
   return (
     <>

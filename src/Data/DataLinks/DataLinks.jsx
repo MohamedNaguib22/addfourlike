@@ -59,8 +59,8 @@ export const DataLinkTwo = [
   },
   {
     id: 3,
-    path: "daily-bouns",
-    content: "DailyBouns",
+    path: "daily-bonus",
+    content: "DailyBonus",
     className:
       "text-gray-700 px-[20px] LinksFonts hover:text-black  transition-all duration-[0.3s]",
   },
@@ -73,7 +73,6 @@ export const DataLinkTwo = [
   },
   {
     id: 5,
-    path: "free-point",
     content: "Free Point",
     className:
       "text-gray-700 font-normal LinksFonts px-[20px] hover:text-black  transition-all duration-[0.3s]",

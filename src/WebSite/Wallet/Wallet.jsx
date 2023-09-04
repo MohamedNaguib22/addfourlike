@@ -31,7 +31,7 @@ export const Wallet = () => {
         provided, the task owner has up to 24 hours to review (approve/reject)
         it. If the owner does not review it within the specified time period,
         the task status will be set to `approved` and you will receive AMF
-        Tokens on your AddMeFast AMF balance. | Currently 1 AMF ≈ $0.0049 USD
+        Tokens on your Add4Like AMF balance. | Currently 1 AMF ≈ $0.0049 USD
         (by CoinMarketCap).
       </p>
     </div>

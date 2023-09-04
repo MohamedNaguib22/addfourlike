@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../../public/Assets/img/logo.png";
 import { FaBars, FaUser } from "react-icons/fa";
-import { UserIcon } from "@heroicons/react/24/solid";
+import {UserIcon} from "@heroicons/react/solid"
 import { useState } from "react";
 export const TopNav = () => {
   const [mobileNav, setMobileNav] = useState(false);

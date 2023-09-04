@@ -13,7 +13,7 @@ export const About = () => {
           <p className="lg:ml-[20px] ml-0 font-medium text-[18px] w-full lg:w-[80%] text-black lg:text-gray-500 leading-[24px]">
             Facebook is the fastest growing and most renowned social network of
             the world, therefore, it`s of vital importance to represent your
-            business here. With the help of Addmefast, you can gain thousands of
+            business here. With the help of Add4Like, you can gain thousands of
             likes, followers and shares ABSOLUTELY FOR FREE. Here is the full
             list of Facebook features.
           </p>

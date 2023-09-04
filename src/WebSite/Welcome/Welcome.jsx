@@ -4,7 +4,7 @@ import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 
 export const Welcome = () => {
   return (
-    <div className=" mt-[10px] WelcomeWidth pb-[50px]">
+    <div className=" mt-[10px] pb-[50px]">
       <HeaderOne>
         <p>$</p>
         <p>By buying points with AMF Tokens, you get 50% More</p>
@@ -107,8 +107,8 @@ export const Welcome = () => {
             </h1>
             <ul className="px-[20px] list-disc flex flex-col gap-2">
               <li>
-                AddMeFast.com has been online for more than 11
-                yearsAddMeFast.com has been online for more than
+                Add4Like.com has been online for more than 11 yearsAdd4Like.com
+                has been online for more than
                 <span className="bg-white ml-[2px] mr-[2px] text-black font-bold inline-block">
                   11 years
                 </span>

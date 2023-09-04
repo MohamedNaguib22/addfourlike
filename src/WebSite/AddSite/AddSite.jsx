@@ -30,7 +30,7 @@ export const AddSite = () => {
         </p>
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center mb-[40px]">
-        <form className=" w-full lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
+        <form className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="Type">
               Type:
@@ -45,6 +45,28 @@ export const AddSite = () => {
             </select>
           </div>
           <div className="flex gap-1 items-center mb-[16px]">
+            <label className="w-[120px] text-right" htmlFor="Title">
+              Title:
+            </label>
+            <input
+              type="text"
+              className="lg:w-[350px] py-[8px] rounded-lg w-full"
+              required
+              minLength={2}
+            />
+          </div>
+          <div className="flex gap-1 items-center mb-[16px]">
+            <label className="w-[120px] text-right" htmlFor="FB post url">
+              FB post url:
+            </label>
+            <input
+              type="text"
+              className="lg:w-[350px] py-[8px] rounded-lg w-full"
+              required
+              minLength={2}
+            />
+          </div>
+          <div className="flex gap-1 items-center mb-[16px] ml-[-15px] lg:ml-0 ">
             <label className="w-[120px] text-right" htmlFor="Countries">
               Countries:
             </label>
@@ -70,28 +92,6 @@ export const AddSite = () => {
                 <option value="">Germany</option>
               </select>
             </div>
-          </div>
-          <div className="flex gap-1 items-center mb-[16px]">
-            <label className="w-[120px] text-right" htmlFor="Title">
-              Title:
-            </label>
-            <input
-              type="text"
-              className="lg:w-[350px] py-[8px] rounded-lg w-full"
-              required
-              minLength={2}
-            />
-          </div>
-          <div className="flex gap-1 items-center mb-[16px]">
-            <label className="w-[120px] text-right" htmlFor="FB post url">
-              FB post url:
-            </label>
-            <input
-              type="text"
-              className="lg:w-[350px] py-[8px] rounded-lg w-full"
-              required
-              minLength={2}
-            />
           </div>
           <div className="flex items-center gap-[10px] mb-[16px]">
             <div className="flex gap-1">
@@ -167,11 +167,11 @@ export const AddSite = () => {
               Cost/Points Per Click (from 5 to 50)
             </p>
           </div>
-          <div className="grid lg:grid-cols-2 grid-cols-1">
-            <button className="text-black underline">Cancel</button>
-            <button className="text-white bg-black w-[200px] ml-[-30px] h-[45px] rounded-lg">
+          <div className="grid lg:grid-cols-2 grid-cols-1 w-[50%] mx-auto lg:w-[200px]">
+            <button className="text-white bg-black ml-0 lg:ml-[-30px] h-[45px] rounded-lg">
               Save Change
             </button>
+            <button className="text-black underline">Cancel</button>
           </div>
         </form>
       </div>

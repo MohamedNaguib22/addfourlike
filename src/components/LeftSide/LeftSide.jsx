@@ -6,7 +6,7 @@ import { Icons } from "../../Data/DataLinks/Icons";
 
 export const LeftSide = () => {
   return (
-    <div className="lg:shadow-md text-center lg:fixed top-[90px] w-full lg:w-[16.7%] left-0 bottom-0 lg:text-start h-full pb-[50px]">
+    <div className="overflow-y-auto  lg:shadow-md pb-[100px] text-center lg:fixed top-[90px] w-full lg:w-[16.7%] left-0 bottom-0 lg:text-start h-full ">
       <ul className="flex flex-col gap-4 text-[24px] pb-[18px] font-bold pt-[20px] relative px-[10px] before:content-['']  before:absolute before:w-[80%] before:h-[2px] before:bg-gray-400 before:bottom-0 before:left-2/4 before:translate-x-[-50%] ">
         <li className="flex gap-2 items-center lg:justify-start px-[0] lg:px-[20px] justify-center LinksFonts bg-white w-full h-[43px] rounded-[23px]">
           <FaPlus size={14} />
@@ -42,7 +42,7 @@ export const LeftSide = () => {
       <ul className="flex justify-center gap-3 mt-[30px] ">
         {SocialData.map((item) => {
           return (
-            <li className="text-[34px]" key={item.id}>
+            <li className="lg:text-[26px] xl:text-[36px]" key={item.id}>
               <Icons {...item} />
             </li>
           );

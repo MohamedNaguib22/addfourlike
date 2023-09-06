@@ -21,7 +21,7 @@ export const ProfileFollow = () => {
         </p>
       </HeaderTwo>
       <div className="w-[60%] container text-center">
-        <div className="bg-gray-600 w-[80%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
+        <div className="bg-gray-600 w-[90%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
           <p>
             Wait 2-3 seconds after Follow/Like/Subscribe and then close pop-up
             window.

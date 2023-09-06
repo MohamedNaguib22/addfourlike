@@ -37,22 +37,22 @@ export const RightSide = () => {
             </button>
           </div>
         </Flex>
-        <div className="flex items-center pl-[10px] relative bg-gray-600 gap-[10px] mt-[8px]">
+        <div className="flex items-center pl-[10px] relative py-[8px] bg-gray-600 gap-[8px] mt-[8px]">
           <div>
-            <h1 className="text-[25px] font-bold text-white">Your Ad Here</h1>
+            <h1 className=" lg:text-[16px] 2xl:text-[22px] font-extrabold text-white">Your Ad Here</h1>
           </div>
           <div>
-            <PlusIcon className="w-[30px] text-white cursor-pointer" />
+            <PlusIcon className="w-[24px] text-white cursor-pointer" />
           </div>
           <div>
             <AiOutlineArrowsAlt
-              size={24}
+              size={20}
               className="text-white cursor-pointer"
             />
           </div>
           <div className="group h-full">
-            <ExclamationCircleIcon className="h-[14px] text-white mt-[-16px] bl-[-18px] cursor-help " />
-            <h1 className="absolute z-[44] bg-white w-[60%] left-[70%] p-[10px] top-[38px] translate-x-[-50%] text-[12px] opacity-0 invisible transition-all duration-75 group-hover:opacity-[1] group-hover:visible">
+            <ExclamationCircleIcon className="h-[14px] text-white mt-[-14px] bl-[-18px] cursor-help " />
+            <h1 className="absolute z-[44] bg-white w-[80%] left-[70%] p-[10px] top-[38px] translate-x-[-50%] text-[12px] opacity-0 invisible transition-all duration-75 group-hover:opacity-[1] group-hover:visible">
               Here, you see donations from users renting this space. All funds
               will go directly to the AMF General Wallet, which is distributed
               among all users of AddMeFast. By Clicking, Following, Liking you

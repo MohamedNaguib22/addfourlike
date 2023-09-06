@@ -55,6 +55,7 @@ const Navbar = (props) => {
           </button>
         </div>
       </div>
+      {/* Mobile Nav */}
       <div
         className={`lg:hidden block right-0 overflow-hidden lg:opacity-0 opacity-[1] lg:invisible visible w-[380px] bg-white text-black fixed z-[2] top-0 transition-all duration-[0.5s] h-screen leading-[21.78px] Font font-[400] text-[18px] px-[40px] pt-[70px] ${
           nav ? "right-0 " : "right-[-200%] "

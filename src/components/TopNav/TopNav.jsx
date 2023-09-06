@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import logo from "../../../public/Assets/img/logo.png";
 import { FaBars, FaUser } from "react-icons/fa";
 import {UserIcon} from "@heroicons/react/solid"
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { SideNav } from "../../Context/ContextSide";
 export const TopNav = () => {
+  const Side = useContext(SideNav);
+  const FunctionSide = Side.SideShow;
   const [mobileNav, setMobileNav] = useState(false);
   function handleMobile() {
     setMobileNav(!mobileNav);
@@ -51,7 +54,10 @@ export const TopNav = () => {
         <FaUser size={70} />
       </div>
       <div className="block lg:hidden">
-        <button className="border-2 border-white p-[10px] rounded-lg text-white">
+        <button
+          onClick={FunctionSide}
+          className="border-2 border-white p-[10px] rounded-lg text-white"
+        >
           <FaBars size={30} />
         </button>
       </div>

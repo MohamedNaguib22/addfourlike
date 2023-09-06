@@ -52,7 +52,7 @@ export const DataLinkTwo = [
   },
   {
     id: 2,
-    path: "p2p-trades",
+    path: "p2p-trade",
     content: "P2P Trade",
     className:
       "text-gray-700 px-[20px] LinksFonts hover:text-black  transition-all duration-[0.3s]",

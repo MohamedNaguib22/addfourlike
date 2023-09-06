@@ -1,6 +1,5 @@
 import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
 import { Tasks } from "../../components/P2PTasks/Tasks";
-import { Table } from "../../components/Table/Table";
 
 export const Wallet = () => {
   return (
@@ -22,7 +21,6 @@ export const Wallet = () => {
         There are currently 176 active P2P Tasks and 50345 completed
         performances (in total, users have earned AMF Tokens 699,398.35 AMF)
       </p>
-      <Table />
       <p className="w-[90%] py-[10px] px-[20px] text-[14px] font-medium mx-auto text-white bg-gray-500 ">
         You are Regular user and You can get at a time. | CPT is the total
         amount of AMF Tokens that you will receive after completing the task. |

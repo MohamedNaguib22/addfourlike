@@ -18,6 +18,9 @@ import { FBPage } from "../WebSite/FBPage/FBPage";
 import { FBShare } from "../WebSite/FBShare/FBShare";
 import { PostLike } from "../WebSite/FBShare/PostLike/PostLike";
 import { WebSite } from "../WebSite/Website";
+import { ProfileFollow } from "../WebSite/ProfileFollow/ProfileFollow";
+import { FBComment } from "../WebSite/FBComment/FBComment";
+import { Trade } from "../WebSite/Trade/Trade";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;
@@ -41,11 +44,14 @@ export const Pages = () => {
             <Route path="wallet" element={<Wallet />} />
             <Route path="add-site" element={<AddSite />} />
             <Route path="my-site" element={<MySite />} />
+            <Route path="p2p-trade" element={<Trade />} />
             <Route path="daily-bonus" element={<DailyBonus />} />
             <Route path="buy-point" element={<ByPoints />} />
             <Route path="page-like" element={<FBPage />} />
             <Route path="fb-share" element={<FBShare />} />
             <Route path="fb-post" element={<PostLike />} />
+            <Route path="fb-profile" element={<ProfileFollow />} />
+            <Route path="fb-comment" element={<FBComment />} />
           </Route>
         </Routes>
       </span>

@@ -20,3 +20,6 @@
 .MobileBorder2 {
   @apply after:content-[''] before:block  after:absolute  lg:after:left-[-8%] after:top-[50%] after:translate-y-[-50%] after:border-[transparent_#F3F4F6_transparent_transparent] after:border-[24px]
 }
+.borderTwo {
+  @apply before:content-[''] before:absolute before:w-[90%] before:h-[2px] before:bg-gray-400 before:bottom-0 pb-[16px] before:left-2/4 before:translate-x-[-50%];
+}

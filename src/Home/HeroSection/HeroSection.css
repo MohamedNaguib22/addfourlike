@@ -6,7 +6,7 @@
   font-family: 'Pangolin', cursive;
 }
 .BgHeroSection {
-  background-image: url(../../../public/Assets/img/image\ 2.png);
+  background-image: url(../../../public/Assets/img/image2.png);
 }
 .BtnHero {
   background: linear-gradient(270deg, #3441F4 0%, #4D5DFC 74.27%, #4D5DFC 74.27%, #5060FD 81.32%, #5060FD 81.32%, #5262FE 87.49%, #5262FE 87.49%, #5667FF 100%);

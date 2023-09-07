@@ -75,7 +75,7 @@ export const Login = () => {
           <Link
           to="website"
             type="submit"
-            className="text-white bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[24px] w-[80%] lg:w-[240px] h-[50px] rounded-[20px] "
+            className="text-white flex justify-center items-center bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[24px] w-[80%] lg:w-[240px] h-[50px] rounded-[20px] "
           >
             Login
           </Link>

@@ -1,3 +1,10 @@
+@media only screen and (min-width:1277px) and (max-width:1409px) {
+  .LinksFonts {
+    font-size: 20px !important;
+    padding-left: 10px !important;
+    padding-right:0px !important;
+  }
+}
 @media only screen and (min-width:992px) and (max-width:1276px) {
   .LinksFonts {
     font-size: 16px !important;

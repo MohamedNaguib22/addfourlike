@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../../public/Assets/img/logo.png";
 import { FaBars, FaUser } from "react-icons/fa";
-import {UserIcon} from "@heroicons/react/solid"
+import { UserIcon } from "@heroicons/react/solid";
 import { useContext, useState } from "react";
 import { SideNav } from "../../Context/ContextSide";
 export const TopNav = () => {
@@ -13,9 +13,12 @@ export const TopNav = () => {
   }
   return (
     <div className="fixed z-[999] top-0 w-full shadow-md bg-gray-700 px-[28px] h-[90px] flex justify-between items-center">
-      <div className="block lg:hidden" onClick={handleMobile}>
-        <button className="border-2 border-white rounded-full p-[5px] text-white">
-          <UserIcon className="h-[40px] w-[40px]" />
+      <div className="block lg:hidden">
+        <button
+          onClick={FunctionSide}
+          className="border-2 border-white p-[10px] rounded-lg text-white"
+        >
+          <FaBars size={30} />
         </button>
       </div>
       {/* Mobile */}
@@ -53,12 +56,9 @@ export const TopNav = () => {
         <h1 className="text-white font-bold text-[40px]">@Kareem</h1>
         <FaUser size={70} />
       </div>
-      <div className="block lg:hidden">
-        <button
-          onClick={FunctionSide}
-          className="border-2 border-white p-[10px] rounded-lg text-white"
-        >
-          <FaBars size={30} />
+      <div className="block lg:hidden" onClick={handleMobile}>
+        <button className="border-2 border-white rounded-full p-[5px] text-white">
+          <UserIcon className="h-[40px] w-[40px]" />
         </button>
       </div>
     </div>

@@ -18,7 +18,6 @@ export const ByPoints = () => {
       </HeaderOne>
       <HeaderTwo>
         <h1 className="text-[26px]">Buy Points</h1>
-        <p>[... boost Your promotion and save Your time ...]</p>
         <p className="text-[14px] font-normal w-[62%]">
           You can choose one of the available payment methods and buy points for
           Social Media Marketing and Cryptocurrency promotion. For every bundle

@@ -20,10 +20,6 @@ export const FBShare = () => {
       </HeaderOne>
       <HeaderTwo>
         <h1>Facebook Share</h1>
-        <p>
-          [... get FREE points by liking, following and etc. other
-          profiles/posts ...]
-        </p>
       </HeaderTwo>
       <div className="text-[20px] text-center mb-[16px] font-bold">
         <p>You will get 4 points for sharing.</p>

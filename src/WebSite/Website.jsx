@@ -11,7 +11,7 @@ export const WebSite = () => {
         <div className="col-span-1">
           <LeftSide />
         </div>
-        <div className="col-span-4 h-auto lg:h-fit">
+        <div className="col-span-4 h-auto lg:h-fit mb-[26px]">
           <Outlet />
         </div>
         <div className="col-span-1">

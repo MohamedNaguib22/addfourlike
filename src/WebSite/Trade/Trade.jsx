@@ -15,9 +15,6 @@ export const Trade = () => {
       </HeaderOne>
       <HeaderTwo>
         <h1 className="text-[26px]">P2P Trade</h1>
-        <p className="text-[15px]">
-          [... AddMeFast P2P: Buy/Sell Services in AMF Tokens ...]
-        </p>
         <p className="text-[12px] lg:w-[60%] my-[4px]">
           Peer-to-peer trade (or P2P Trade) is a marketplace where AddMeFast
           users can trade services in AMF Tokens directly with each other on

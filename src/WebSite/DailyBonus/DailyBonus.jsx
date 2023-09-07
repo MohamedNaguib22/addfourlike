@@ -18,7 +18,6 @@ export const DailyBonus = () => {
       </HeaderOne>
       <HeaderTwo>
         <h1 className="text-[32px] font-[400]">Daily Bonus</h1>
-        <p>[... be active to get more bonus points ...]</p>
         <p className="text-[13px] pb-[10px] font-normal w-[32%]">
           Get daily{" "}
           <span className="text-black text-[26px] font-bold">

@@ -16,11 +16,11 @@ import { DailyBonus } from "../WebSite/DailyBonus/DailyBonus";
 import { ByPoints } from "../WebSite/ByPoints/ByPoints";
 import { FBPage } from "../WebSite/FBPage/FBPage";
 import { FBShare } from "../WebSite/FBShare/FBShare";
-import { PostLike } from "../WebSite/FBShare/PostLike/PostLike";
 import { WebSite } from "../WebSite/Website";
 import { ProfileFollow } from "../WebSite/ProfileFollow/ProfileFollow";
 import { FBComment } from "../WebSite/FBComment/FBComment";
 import { Trade } from "../WebSite/Trade/Trade";
+import { PostLike } from "../WebSite/PostLike/PostLike";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;

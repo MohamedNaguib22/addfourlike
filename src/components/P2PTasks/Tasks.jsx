@@ -6,9 +6,6 @@ export const Tasks = () => {
     <div className="mb-[20px]">
       <HeaderTwo>
         <h1 className=" text-[26px]">P2P Tasks - FREE AMF Tokens</h1>
-        <p className="text-[17px] font-medium">
-          [... complete tasks to get FREE AMF Tokens ...]
-        </p>
         <p className="text-[15px] w-[80%] mx-auto font-normal">
           Peer-to-peer tasks (or P2P Tasks) is a marketplace where Add4Like
           users can complete tasks in AMF Tokens directly with each other on

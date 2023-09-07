@@ -25,9 +25,6 @@ export const AddSite = () => {
       </HeaderOne>
       <HeaderTwo>
         <h1 className="text-[28px] font-medium">Add / Edit Content</h1>
-        <p className="font-medium">
-          [... Here you can add or edit your content ...]
-        </p>
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center mb-[40px]">
         <form className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">

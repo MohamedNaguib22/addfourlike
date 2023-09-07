@@ -18,10 +18,6 @@ export const FBPage = () => {
       </HeaderOne>
       <HeaderTwo>
         <h1>FB Page Likes/Followers</h1>
-        <p>
-          [... get FREE points by liking, following and etc. other
-          profiles/posts ...]
-        </p>
       </HeaderTwo>
       <div className="w-[60%] container text-center">
         <div className="bg-black text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">

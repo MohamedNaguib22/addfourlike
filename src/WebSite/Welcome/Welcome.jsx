@@ -22,7 +22,7 @@ export const Welcome = () => {
             Social Media Marketing (Exchange) Platform
           </h2>
         </div>
-        <div className="w-[95%] mb-[26px] bg-black text-white flex justify-between items-center px-[34px] py-[20px]  rounded-md border-dashed  border-[3px] border-white">
+        <div className="w-[95%] mb-[26px] bg-black text-white flex justify-between text-center lg:text-start items-center px-[34px] py-[20px]  rounded-md border-dashed  border-[3px] border-white">
           <h1 className="text-[18px]">
             How to get more likes/followers and etc. on Add4Like
           </h1>

@@ -5,7 +5,7 @@ import { Footer } from "../../Home/Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 export const Contact = () => {
   return (
-    <>
+    <div className=" overflow-hidden">
       <Navbar
         class="bg-gray-200 "
         color="text-black"
@@ -168,6 +168,6 @@ export const Contact = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };

@@ -28,7 +28,7 @@ export const Login = () => {
       </div>
       <form
         onSubmit={Submit}
-        className="flex flex-col gap-[20px]  w-[70%] mx-auto"
+        className="flex flex-col gap-[20px] w-[80%] mx-auto"
       >
         <div className="flex justify-center text-black">
           <span>
@@ -82,7 +82,7 @@ export const Login = () => {
         </div>
         <div className="flex w-full justify-between text-white text-[20px]">
           <div className="flex items-center">
-            <div className="flex items-center h-5">
+            <div className="flex items-center  h-5">
               <input
                 id="remember"
                 type="checkbox"
@@ -96,7 +96,7 @@ export const Login = () => {
             </label>
           </div>
           <div onClick={() => switchContext("forgot")}>
-            <p className="text-blue-700 font-bold  cursor-pointer">
+            <p className="text-blue-700 lg:font-bold  cursor-pointer">
               Forgot Password?
             </p>
           </div>

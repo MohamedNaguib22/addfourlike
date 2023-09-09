@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
+import SiteTable from "../../components/SiteTable/SiteTable";
 
 export const MySite = () => {
   return (
@@ -32,6 +33,11 @@ export const MySite = () => {
             right now!
           </h1>
         </div>
+      </div>
+      <div className="container my-[26px] lg:px-[40px]">
+        <SiteTable />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-[34px] mt-[20px]">
         <div className="text-center text-[18px] font-medium w-[90%]">
           <h1>
             You can add unlimited links, pages, or social media accounts.

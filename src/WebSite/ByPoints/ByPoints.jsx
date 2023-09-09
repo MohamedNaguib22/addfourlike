@@ -4,6 +4,7 @@ import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 import { DataBuy } from "../../Data/BuyCard/BuyData";
 import { BuyCard } from "../../Data/BuyCard/BuyCard";
 import Logo from '../../../public/Assets/img/buy_small.webp'
+import { FormBuy } from "../../components/Forms/FormBuy";
 export const ByPoints = () => {
   return (
     <div>
@@ -31,6 +32,7 @@ export const ByPoints = () => {
           </span>
         </p>
       </HeaderTwo>
+      <FormBuy />
       <div className="lg:w-[50%] w-full container">
         <div className="bg-white border-[2px] border-black/50  mb-[40px]">
           <Link to="#" className="block px-[20px] py-[18px]">

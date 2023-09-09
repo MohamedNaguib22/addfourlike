@@ -23,3 +23,7 @@
 .borderTwo {
   @apply before:content-[''] before:absolute before:w-[90%] before:h-[2px] before:bg-gray-400 before:bottom-0 pb-[16px] before:left-2/4 before:translate-x-[-50%];
 }
+
+tr:nth-child(even) {
+  background-color: #F9FAFB;
+}

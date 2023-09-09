@@ -1,6 +1,8 @@
 import { AiOutlineWarning } from "react-icons/ai";
 import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
 import { Tasks } from "../../components/P2PTasks/Tasks";
+import { OrderTable } from "../../components/OrderTable/OrderTable";
+import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 
 export const MyOrder = () => {
   return (
@@ -15,6 +17,17 @@ export const MyOrder = () => {
           </h1>
         </div>
       </HeaderOne>
+      <HeaderTwo>
+        <h1 className=" text-[26px]">My Order - FREE AMF Tokens</h1>
+        <p className="text-[15px] w-[80%] mx-auto font-normal">
+          Peer-to-peer tasks (My Order) is a marketplace where Add4Like users
+          can complete tasks in AMF Tokens directly with each other on their own
+          terms.
+        </p>
+      </HeaderTwo>
+      <div className="container my-[26px] lg:px-[40px]">
+        <OrderTable />
+      </div>
       <Tasks />
       <p className="text-[16px] font-medium text-center mb-[30px]">
         There is no proof pending verification.

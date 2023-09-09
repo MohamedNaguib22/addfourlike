@@ -1,17 +1,9 @@
 import { FaLink } from "react-icons/fa";
-import HeaderTwo from "../HeaderWebsite/HeaderTwo";
 
 export const Tasks = () => {
   return (
     <div className="mb-[20px]">
-      <HeaderTwo>
-        <h1 className=" text-[26px]">P2P Tasks - FREE AMF Tokens</h1>
-        <p className="text-[15px] w-[80%] mx-auto font-normal">
-          Peer-to-peer tasks (or P2P Tasks) is a marketplace where Add4Like
-          users can complete tasks in AMF Tokens directly with each other on
-          their own terms.
-        </p>
-      </HeaderTwo>
+      
       <div className="text-white bg-black mx-auto w-[70%] text-center py-[20px] px-[40px] rounded-[34px] shadow-2xl">
         <h1 className="text-[24px] mb-[10px]">
           ‼ Only qualified (Gold, Diamond and Dark Matter) users can ADD, VIEW

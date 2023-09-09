@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 import { Flex } from "@tremor/react";
+import { FaWallet } from "react-icons/fa";
+import { TradeTable } from "../../components/TradeTable/TradeTable";
 export const Trade = () => {
   return (
     <div>
@@ -41,8 +43,8 @@ export const Trade = () => {
         <h1 className="text-[18px] font-bold">
           Secure crypto payments in AMF Tokens by AddMeFast
         </h1>
-        <button className="uppercase text-[10px] bg-gray-600 text-white w-[100px] mx-auto h-[28px] my-[8px] flex justify-center items-center rounded-full">
-          connect
+        <button className="uppercase text-[10px]  bg-gray-600 text-white w-[100px] mx-auto h-[28px] my-[8px] flex gap-2 justify-center items-center rounded-full">
+          <FaWallet size={20} /> connect
         </button>
         <h1 className="text-[22px] mb-[10px] font-bold">
           Current Public offers
@@ -93,6 +95,9 @@ export const Trade = () => {
             0xeecd101725b89b66f3e04f953ae0bb647c23fb8d
           </p>
         </Flex>
+      </div>
+      <div className="container lg:px-[20px]">
+        <TradeTable />
       </div>
     </div>
   );

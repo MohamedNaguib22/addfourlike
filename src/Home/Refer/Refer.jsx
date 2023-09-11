@@ -3,8 +3,8 @@ import BgRefer from "../../../public/Assets/img/Group53.png";
 export const Refer = () => {
   return (
     <div className="h-auto relative pb-[100px] lg:mt-[-250px]">
-      <div className="grid lg:grid-cols-2 grid-cols-1  h-screen items-center place-items-end">
-        <div className=" mr-[20px] sm:mr-[80px] md:mr-[0] MediaImg">
+      <div className="grid lg:grid-cols-2 grid-cols-1  h-screen items-center place-items-start">
+        <div className=" mr-[20px] sm:mr-[80px] md:mr-[0]">
           <img src={BgRefer} alt="BgRefer" className="max-w-full h-auto" />
         </div>
         <div className="lg:text-start text-center w-[70%] lg:pr-[60px] mx-auto lg:mt-[150px]">

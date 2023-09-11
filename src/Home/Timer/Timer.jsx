@@ -34,10 +34,11 @@ const Timer = () => {
   }, [shouldStartCounting]);
 
   return (
-    <div ref={ref}>
-      <div className="bg-gray-100 h-[80px] w-[250px] ml-5 rounded-md text-black text-[30px] flex items-center justify-center">
-        {count}
-      </div>
+    <div
+      ref={ref}
+      className="bg-gray-100 h-[68px] my-[10px] rounded-md text-black text-[24px] flex items-center justify-center"
+    >
+      {count}
     </div>
   );
 };

@@ -29,7 +29,7 @@ export const Pages = () => {
       <Forms />
       <span
         className={`${
-          ContextPop ? "blur-[10px] absolute w-full opacity-[1] visible" : ""
+          ContextPop ? "blur-[10px] absolute w-full opacity-[1] visible overflow-hidden" : ""
         }`}
       >
         <Routes>

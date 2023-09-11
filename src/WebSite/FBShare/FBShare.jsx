@@ -21,12 +21,12 @@ export const FBShare = () => {
       <HeaderTwo>
         <h1>Facebook Share</h1>
       </HeaderTwo>
-      <div className="text-[20px] text-center mb-[16px] font-bold">
+      <div className="text-[18px] text-center mb-[16px] font-bold">
         <p>You will get 4 points for sharing.</p>
       </div>
       <Facebook Btn="Share" />
       <FaceBookParent>
-        <p className="w-[60%] mx-auto mb-[16px]">
+        <p className="w-[98%] lg:w-[60%] mx-auto mb-[16px]">
           To get free points by sharing other's WebSites click on the "Share"
           button, then the page will be opened with popUp and after sharing the
           website the popUp will be closed automatically.

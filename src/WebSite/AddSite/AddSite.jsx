@@ -28,6 +28,7 @@ export const AddSite = () => {
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center mb-[40px]">
         <form className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
+        {/* Type */}
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="Type">
               Type:
@@ -41,6 +42,7 @@ export const AddSite = () => {
               <option value="">Facebook Post Like</option>
             </select>
           </div>
+          {/* Title */}
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="Title">
               Title:
@@ -52,6 +54,7 @@ export const AddSite = () => {
               minLength={2}
             />
           </div>
+          {/* FB Post */}
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="FB post url">
               FB post url:
@@ -63,6 +66,7 @@ export const AddSite = () => {
               minLength={2}
             />
           </div>
+          {/* Countries */}
           <div className="flex gap-1 items-center mb-[16px] ml-[-15px] lg:ml-0 ">
             <label className="w-[120px] text-right" htmlFor="Countries">
               Countries:
@@ -90,6 +94,7 @@ export const AddSite = () => {
               </select>
             </div>
           </div>
+          {/* Total */}
           <div className="flex items-center gap-[10px] mb-[16px]">
             <div className="flex gap-1">
               <label className="w-[120px] text-right" htmlFor="FB post url">
@@ -119,6 +124,7 @@ export const AddSite = () => {
             </div>
             <p className="text-[14px] font-normal">Total clicks limit</p>
           </div>
+          {/* Daily */}
           <div className="flex items-center gap-[10px] mb-[16px]">
             <div className="flex gap-1">
               <label className="w-[120px] text-right" htmlFor="FB post url">
@@ -173,7 +179,7 @@ export const AddSite = () => {
         </form>
       </div>
       <HeaderOne>
-        <h1 className="text-center font-normal py-[20px] px-[70px]">
+        <h1 className="w-[98%] lg:w-[60%] text-center font-normal py-[20px]">
           The higher the CPC of your site/page, the more likely you are to get
           it seen, which means that the rate of getting likes/followers will be
           high. You can add an unlimited number of sites/pages. Please read our

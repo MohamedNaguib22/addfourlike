@@ -15,7 +15,7 @@ export const HeroSection = () => {
         <div className="BgHeroSection h-[880px] bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1270px] top-[-2%] absolute right-0"></div>
         <div className="Responsive container mt-[120px] lg:py-[100px] ">
           <div>
-            <h1 className="uppercase text-center lg:text-start mt-[60px] lg:mt-0 ml-0 lg:ml-9 font-[500]  text-[60px] lg:text-[83px] leading-[76px] HeroFont italic  text-black ">
+            <h1 className="uppercase text-center lg:text-start mt-[60px] lg:mt-0 ml-0 lg:ml-9 font-[500]  text-[48px] lg:text-[58px] leading-[76px] HeroFont italic  text-black ">
               add4like
             </h1>
             <div className="flex flex-col items-center lg:items-start">
@@ -31,7 +31,7 @@ export const HeroSection = () => {
                     <ImPower
                       size={20}
                       className="inline lg:hidden visible lg:invisible"
-                    />{" "}
+                    />
                     Free & paid services
                   </h3>
                   <p className="text-gray-500 font-medium lg:text-[16px] text-[14px]">
@@ -86,7 +86,7 @@ export const HeroSection = () => {
               <div className="w-[233px] lg:mx-0 mx-auto">
                 <button
                   onClick={functionModel}
-                  className="BtnHero ml-0 lg:ml-[50px] text-white mt-8 Font uppercase w-[233px] h-[56px] rounded-[29px] flex items-center justify-center "
+                  className="BtnHero lg:ml-[50px] text-white mt-8 Font uppercase w-[180px] mx-auto lg:w-[233px] h-[56px] rounded-[29px] flex items-center justify-center "
                 >
                   try for free
                 </button>

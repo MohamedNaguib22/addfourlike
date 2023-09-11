@@ -35,7 +35,7 @@ const Timer = () => {
 
   return (
     <div ref={ref}>
-      <div className="bg-gray-100 h-[100px] w-[320px] ml-5 rounded-md text-black text-[40px] flex  items-center justify-center">
+      <div className="bg-gray-100 h-[80px] w-[250px] ml-5 rounded-md text-black text-[30px] flex items-center justify-center">
         {count}
       </div>
     </div>

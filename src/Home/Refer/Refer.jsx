@@ -7,14 +7,14 @@ export const Refer = () => {
         <div className=" mr-[20px] sm:mr-[80px] md:mr-[0] MediaImg">
           <img src={BgRefer} alt="BgRefer" className="max-w-full h-auto" />
         </div>
-        <div className="lg:text-start text-center w-[80%] lg:pr-[60px] mx-auto lg:mt-[150px]">
-          <h1 className="text-black font-[400] leading-[80px]  text-[45px] lg:text-[55px]">
+        <div className="lg:text-start text-center w-[70%] lg:pr-[60px] mx-auto lg:mt-[150px]">
+          <h1 className="text-black font-[400] leading-[80px]  text-[28px] lg:text-[38px]">
             Refer & Earn
           </h1>
-          <h3 className="text-black w-full font-[400] leading-[80px] lg:text-[25px]">
+          <h3 className="text-black w-full font-[400] leading-[80px] lg:text-[20px]">
             Earn bonuses by referring others!
           </h3>
-          <p className="text-gray-500 text-[18px] leading-[25px] font-[400]">
+          <p className="text-gray-500 leading-[25px] font-[400]">
             In our Referral section, you can monitor your referral`s progress
             and potentially collect more than 250 credits in bonuses / per
             referral. For each person who registers and collects 500 points

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 export const Ranking = (props) => {
   return (
-    <div className="flex justify-between items-center py-[10px]">
-      <div className="flex items-center gap-[8px]">
+    <div className="flex items-center py-[10px]">
+      <div className="flex flex-1 items-center gap-[8px]">
         <p className="text-[12px] text-gray-500 font-medium">{props.Index}</p>
         <div className="flex items-center gap-[4px]">
           <div>
@@ -12,11 +12,11 @@ export const Ranking = (props) => {
               alt="img"
             />
           </div>
-          <p className="text-[14px]">{props.Name}</p>
+          <p className="text-[12px]">{props.Name}</p>
         </div>
       </div>
       <div>
-        <p className="text-[14px]">{props.Number}</p>
+        <p className="text-[12px]">{props.Number}</p>
       </div>
     </div>
   );

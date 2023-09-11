@@ -16,7 +16,7 @@ export const ProfileFollow = () => {
       <HeaderTwo>
         <h1>Facebook Followers</h1>
       </HeaderTwo>
-      <div className="w-[60%] container text-center">
+      <div className="w-[98%] lg:w-[60%] container text-center">
         <div className="bg-gray-600 w-[90%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
           <p>
             Wait 2-3 seconds after Follow/Like/Subscribe and then close pop-up
@@ -29,7 +29,7 @@ export const ProfileFollow = () => {
         <Facebook Btn="Follow" />
       </div>
       <FaceBookParent>
-        <p className="w-[60%] mx-auto mb-[16px]">
+        <p className="w-[98%] lg:w-[60%]  text-[14px] lg:text-[16px]  mx-auto mb-[16px]">
           To get free points by following other's Facebook Profiles click on the
           "Follow" button, then the profile will be opened with popUp and after
           following to profile CLOSE the popUp yourself. The users who don't

@@ -26,7 +26,7 @@ export const Signup = () => {
     e.preventDefault();
   }
   return (
-    <div className="lg:w-[30%] bg-[#00000057] px-[30px] py-[50px] rounded-md w-full absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%]">
+    <div className="lg:w-[40%] xl:w-[30%] w-full FormsLogin md:w-[65%] bg-[#00000057] px-[30px] py-[50px] rounded-md absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%]">
       <div>
         <FaPlus
           className="rotate-45 text-white fixed top-[8%] right-[10%] z-[558] cursor-pointer"
@@ -36,11 +36,11 @@ export const Signup = () => {
       </div>
       <form
         onSubmit={Submit}
-        className="flex flex-col gap-[20px] w-[70%] mx-auto"
+        className="flex flex-col gap-[20px] lg:w-[90%] mx-auto"
       >
         <div className="flex justify-center text-black">
           <span>
-            <FaUser size={120} />
+            <FaUser size={80} />
           </span>
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -118,7 +118,7 @@ export const Signup = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="text-white bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[24px] w-[80%] lg:w-[240px] h-[50px] rounded-[20px] "
+            className="text-white flex justify-center items-center bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[20px] w-[60%] lg:w-[200px] h-[50px] rounded-[20px]"
           >
             Register
           </button>

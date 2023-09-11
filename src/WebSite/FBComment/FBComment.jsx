@@ -18,7 +18,7 @@ export const FBComment = () => {
       <HeaderTwo>
         <h1>Facebook Comment</h1>
       </HeaderTwo>
-      <div className="w-[60%] container text-center">
+      <div className="text-[14px] lg:text-[16px] w-[98%] lg:w-[60%] container text-center">
         <div className="bg-black text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
           <h1>
             For this section only - click the FOLLOW button if there is no LIKE
@@ -31,17 +31,17 @@ export const FBComment = () => {
             window.
           </p>
         </div>
-        <div className="text-[20px] mb-[16px] font-bold">
+        <div className="text-[16px] mb-[16px] font-bold">
           <p>You will get 11 points for Liking.</p>
         </div>
         <Facebook Btn="Comment" />
       </div>
       <FaceBookParent>
-        <p className="w-[60%] mx-auto mb-[16px]">
+        <p className="w-[98%] lg:w-[60%] mx-auto mb-[16px]">
           To get free points by liking other's posts click on the "Comment"
-          button, then the post will be opened with popUp and after Commenting the
-          post CLOSE the popUp yourself. The users who don't close manually the
-          popUp, will not receive points.
+          button, then the post will be opened with popUp and after Commenting
+          the post CLOSE the popUp yourself. The users who don't close manually
+          the popUp, will not receive points.
         </p>
         <LinkFacebook>Get Facebook Comment</LinkFacebook>
       </FaceBookParent>

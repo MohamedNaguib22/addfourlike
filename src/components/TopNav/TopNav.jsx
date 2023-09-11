@@ -18,18 +18,16 @@ export const TopNav = () => {
           onClick={FunctionSide}
           className="border-2 border-white p-[10px] rounded-lg text-white"
         >
-          <FaBars size={30} />
+          <FaBars size={20} />
         </button>
       </div>
       {/* Mobile */}
       <div
-        className={`absolute bg-gray-700 transition-all duration-[0.3s]  w-full left-0 top-[100%] flex justify-between px-[30px] h-[160px] ${
-          mobileNav
-            ? "opacity-[1] visible h-[160px] top-[100%]"
-            : "invisible top-0 opacity-0 h-0"
+        className={`absolute lg:opacity-0 lg:invisible visible opacity-[1] bg-gray-700 transition-all duration-[0.3s]  w-full left-0 flex justify-between px-[30px] h-[160px] ${
+          mobileNav ? "top-[100%]" : "top-[-200%]"
         }`}
       >
-        <div className="text-white font-bold text-[25px] flex gap-[20px] items-center ">
+        <div className="text-white font-bold text-[24px] flex gap-[20px] items-center ">
           <h1 className="relative before:absolute before:content-[''] before:w-[1px] before:h-[90%] before:bg-white before:right-[-30%] before:top-[50%] before:rotate-6 before:translate-y-[-50%]">
             $0.0
           </h1>
@@ -37,28 +35,28 @@ export const TopNav = () => {
         </div>
         <div className="flex items-center">
           <h1 className="text-white font-bold text-[25px]">@Kareem</h1>
-          <FaUser size={50} />
+          <FaUser size={40} />
         </div>
       </div>
-
-      <div className="w-[200px] lg:w-[300px] mx-auto  lg:mx-0">
+      {/* TopNav */}
+      <div className="w-[200px] lg:w-[250px] mx-auto  lg:mx-0">
         <Link to="/website">
           <img src={logo} alt="" />
         </Link>
       </div>
-      <div className="text-white font-bold text-[40px] hidden lg:flex gap-[50px] items-center ">
+      <div className="text-white font-bold text-[28px] hidden lg:flex gap-[50px] items-center ">
         <h1 className="relative before:absolute before:content-[''] before:w-[1px] before:h-[90%] before:bg-white before:right-[-30%] before:top-[50%] before:rotate-6 before:translate-y-[-50%]">
           $0.0
         </h1>
         <h1>0 Points</h1>
       </div>
       <div className="hidden lg:flex items-center gap-4">
-        <h1 className="text-white font-bold text-[40px]">@Kareem</h1>
-        <FaUser size={70} />
+        <h1 className="text-white font-bold text-[28px]">@Kareem</h1>
+        <FaUser size={40} />
       </div>
       <div className="block lg:hidden" onClick={handleMobile}>
         <button className="border-2 border-white rounded-full p-[5px] text-white">
-          <UserIcon className="h-[40px] w-[40px]" />
+          <UserIcon className="h-[30px] w-[30px]" />
         </button>
       </div>
     </div>

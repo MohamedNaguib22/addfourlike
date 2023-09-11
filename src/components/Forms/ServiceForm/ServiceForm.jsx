@@ -78,7 +78,7 @@ export const ServiceForm = () => {
           />
           <MdOutlineReportGmailerrorred
             size={24}
-            className="absolute top-[42%] left-[96%] text-red-500"
+            className="absolute top-[42%] right-6 text-red-500"
           />
           <p className="font-normal mt-[4px] text-red-500">
             Not Enough credits

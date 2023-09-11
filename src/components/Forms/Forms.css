@@ -1,0 +1,10 @@
+@media only screen and (min-width:530px) and (max-width:767px) {
+  .FormsLogin {
+    width: 80% !important;
+  }
+}
+@media only screen and (min-width:850px) and (max-width:991px) {
+  .FormsLogin {
+    width: 50% !important;
+  }
+}

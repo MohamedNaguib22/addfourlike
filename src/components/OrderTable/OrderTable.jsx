@@ -47,7 +47,7 @@ export const OrderTable = () => {
                 className="bg-black text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
-                Read More
+                Details
               </Link>
             </td>
           </tr>

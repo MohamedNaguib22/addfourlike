@@ -23,7 +23,7 @@ export const PostLike = () => {
       </div>
       <Facebook Btn="Like" />
       <FaceBookParent>
-        <p className="w-[60%] mx-auto mb-[16px]">
+        <p className="w-[98%] lg:w-[60%] mx-auto text-[14px] lg:text-[16px] mb-[16px]">
           To get free points by liking other's posts click on the "like" button,
           then the post will be opened with popUp and after liking the post
           CLOSE the popUp yourself. The users who don't close manually the
@@ -32,7 +32,7 @@ export const PostLike = () => {
           popUp and after liking the post CLOSE the popUp yourself. The users
           who don't close manually the popUp, will not receive points.
         </p>
-        <LinkFacebook >Get Facebook Post Likes</LinkFacebook>
+        <LinkFacebook>Get Facebook Post Likes</LinkFacebook>
       </FaceBookParent>
     </div>
   );

@@ -13,7 +13,7 @@ export const FaceBookParent = ({ children }) => {
 
 export const LinkFacebook = ({ children }) => {
   return (
-    <Link to="/website/add-site" className="bg-black w-[340px] h-[48px] mx-auto flex gap-[8px] font-medium rounded-lg justify-center items-center">
+    <Link to="/website/add-site" className="bg-black w-[250px] lg:w-[340px] h-[48px] mx-auto flex lg:gap-[8px] text-[14px] lg:text-[16px] rounded-lg justify-center items-center">
       <span>+</span>
       {children}
     </Link>

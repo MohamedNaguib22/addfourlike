@@ -3,6 +3,7 @@ import { FaPlus, FaUser } from "react-icons/fa";
 import { FormContext } from "../../Context/ContextForm";
 import { PopUp } from "../../Context/Context";
 import { Link } from "react-router-dom";
+import "./Forms.css"
 
 export const Login = () => {
   // UseContext
@@ -18,7 +19,7 @@ export const Login = () => {
     e.preventDefault();
   }
   return (
-    <div className="lg:w-[30%] bg-[#00000057] px-[30px] py-[50px] rounded-md  w-full absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%]">
+    <div className="lg:w-[40%] xl:w-[30%] w-full FormsLogin md:w-[65%] bg-[#00000057] lg:px-[30px] py-[50px] rounded-md absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%]">
       <div>
         <FaPlus
           className="rotate-45 text-white fixed top-[8%] right-[10%] z-[558] cursor-pointer"
@@ -28,11 +29,11 @@ export const Login = () => {
       </div>
       <form
         onSubmit={Submit}
-        className="flex flex-col gap-[20px] w-[80%] mx-auto"
+        className="flex flex-col gap-[20px] w-[90%] mx-auto"
       >
         <div className="flex justify-center text-black">
           <span>
-            <FaUser size={120} />
+            <FaUser size={80} />
           </span>
         </div>
         <div className="relative z-0 w-full mb-6 group ">
@@ -73,14 +74,14 @@ export const Login = () => {
         </div>
         <div className="flex justify-center">
           <Link
-          to="website"
+            to="website"
             type="submit"
-            className="text-white flex justify-center items-center bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[24px] w-[80%] lg:w-[240px] h-[50px] rounded-[20px] "
+            className="text-white flex justify-center items-center bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[20px] w-[60%] lg:w-[200px] h-[50px] rounded-[20px] "
           >
             Login
           </Link>
         </div>
-        <div className="flex w-full justify-between text-white text-[20px]">
+        <div className="flex w-full justify-between text-white text-[16px]">
           <div className="flex items-center">
             <div className="flex items-center  h-5">
               <input
@@ -96,7 +97,7 @@ export const Login = () => {
             </label>
           </div>
           <div onClick={() => switchContext("forgot")}>
-            <p className="text-blue-700 lg:font-bold  cursor-pointer">
+            <p className="text-blue-700  lg:font-bold  cursor-pointer">
               Forgot Password?
             </p>
           </div>
@@ -104,7 +105,7 @@ export const Login = () => {
         <div className="text-black text-center relative text-[20px] after:h-[2px] after:w-[30%] after:bg-black after:content-[''] after:absolute after:top-[50%] after:right-[55%] before:h-[2px]  before:w-[30%] before:bg-black before:content-[''] before:absolute before:top-[50%] before:left-[55%]">
           <h1>OR</h1>
         </div>
-        <h2 className="text-white text-[20px] text-center font-medium">
+        <h2 className="text-white text-[18px] text-center font-medium">
           if You Don`t Have Account ?
           <span
             className="text-blue-700 font-bold cursor-pointer"

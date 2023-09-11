@@ -6,30 +6,30 @@ export const Welcome = () => {
   return (
     <div className=" mt-[10px] pb-[50px]">
       <HeaderOne>
-        <p>$</p>
-        <p>By buying points with AMF Tokens, you get 50% More</p>
+        <p className="text-[14px] lg:text-[16px]">$</p>
+        <p className="text-[14px] lg:text-[16px]">By buying points with AMF Tokens, you get 50% More</p>
       </HeaderOne>
       <HeaderTwo>
-        <h1 className=" text-[26px]">Welcome</h1>
+        <h1 className="text-[14px] lg:text-[26px]">Welcome</h1>
       </HeaderTwo>
       <div className="container flex-col flex w-full lg:w-[85%]">
-        <h1 className="text-[24px] font-bold justify-center flex">
+        <h1 className="text-[20px] text-center mb-[18px] lg:text-[24px] font-bold justify-center flex">
           Thank You for choosing Add4Like.com
         </h1>
         <div className="w-full  text-black items-center flex gap-4">
-          <h1 className="text-[100px] font-extrabold">#1</h1>
-          <h2 className="text-[30px] w-full lg:w-[60%] font-bold">
+          <h1 className="text-[60px] lg:text-[100px] font-extrabold">#1</h1>
+          <h2 className="text-[20px] lg:text-[30px] w-full lg:w-[60%] font-bold">
             Social Media Marketing (Exchange) Platform
           </h2>
         </div>
-        <div className="w-[95%] mb-[26px] bg-black text-white flex justify-between text-center lg:text-start items-center px-[34px] py-[20px]  rounded-md border-dashed  border-[3px] border-white">
-          <h1 className="text-[18px]">
+        <div className="w-[95%] mx-auto mb-[26px] bg-black text-white flex justify-between text-center lg:text-start items-center px-[34px] py-[20px]  rounded-md border-dashed  border-[3px] border-white">
+          <h1 className="text-[16px] lg:text-[18px]">
             How to get more likes/followers and etc. on Add4Like
           </h1>
           <FaQuestion size={36} />
         </div>
         <div className="mb-[26px]">
-          <h1 className=" font-medium mb-[18px] bg-black text-gray-300 w-fit px-[5px]">
+          <h1 className="font-medium mb-[18px] te bg-black text-gray-300  w-fit px-[5px]">
             Over 11 YEARS of FREE Social Media Marketing with Add4Like
           </h1>
           <p>

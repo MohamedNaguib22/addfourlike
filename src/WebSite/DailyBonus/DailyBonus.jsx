@@ -17,25 +17,25 @@ export const DailyBonus = () => {
         </div>
       </HeaderOne>
       <HeaderTwo>
-        <h1 className="text-[32px] font-[400]">Daily Bonus</h1>
-        <p className="text-[13px] pb-[10px] font-normal w-[32%]">
-          Get daily{" "}
-          <span className="text-black text-[26px] font-bold">
+        <h1 className="text-[28px] font-[400]">Daily Bonus</h1>
+        <p className="text-[13px] pb-[10px] font-normal lg:w-[32%]">
+          Get daily
+          <span className="text-black text-[22px] font-bold">
             200 and more bonus points
           </span>{" "}
           (Only daily active users can get bonuses)
         </p>
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center gap-[26px]">
-        <h1 className="text-gray-600 text-center text-[20px] font-bold">
+        <h1 className="text-gray-600 text-center text-[18px] font-bold">
           There are no clicks yet for today. Get FREE points in order to be able
           to get unlimited Daily Bonus Points.
         </h1>
-        <p className="text-black text-center  text-[16px] font-bold">
+        <p className="text-black text-center  text-[16px] font-medium">
           Make at least 100 clicks to be able to get 200 and more daily bonus
           points.
         </p>
-        <p className="text-[14px] font-medium w-[80%] text-center text-gray-500  mb-[38px]">
+        <p className="text-[14px] font-medium lg:w-[80%] text-center text-gray-500  mb-[38px]">
           Daily Bonus counting by daily ranking, so You can get unlimited daily
           bonus points. Daily Bonus counting as of daily ranking and daily click
           amount. You can get Daily Bonus once a day at anytime you want after

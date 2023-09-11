@@ -8,7 +8,7 @@ export const ProfileFollow = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
           <p>$</p>
           <h1>By buying points with AMF Tokens, you get 50% More</h1>
         </div>
@@ -17,7 +17,7 @@ export const ProfileFollow = () => {
         <h1>Facebook Followers</h1>
       </HeaderTwo>
       <div className="w-[98%] lg:w-[60%] container text-center">
-        <div className="bg-gray-600 w-[90%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
+        <div className="bg-gray-600 text-[14px] lg:text-[16px] w-[95%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
           <p>
             Wait 2-3 seconds after Follow/Like/Subscribe and then close pop-up
             window.

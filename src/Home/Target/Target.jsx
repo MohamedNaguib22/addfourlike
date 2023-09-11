@@ -27,7 +27,7 @@ export const Target = () => {
       </div>
       <div
         data-aos="fade-right"
-        className="flex LgLgBorder  MobileBorder top-[-3%] left-[8%] lg:left-[-25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[10px] lg:py-[18px] rounded-md"
+        className="flex LgLgBorder MobileBorder top-[-2%] xl:top-[-3%] left-[8%] lg:left-[-25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[10px] lg:py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
           First Target
@@ -41,7 +41,7 @@ export const Target = () => {
       </div>
       <div
         data-aos="fade-left"
-        className="flex MediaCard xl:top-[10%]  MobileBorder2  left-[8%] lg:left-[25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[10px] md:py-[18px] rounded-md"
+        className="flex MediaCard xl:top-[10%] sm:top-[9%] top-[12%] MobileBorder2  left-[8%] lg:left-[25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[10px] md:py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
           First Target
@@ -55,7 +55,7 @@ export const Target = () => {
       </div>
       <div
         data-aos="fade-right"
-        className="flex LgLgBorder MobileBorder xl:top-[26%] MediaCard2 left-[8%]   lg:left-[-25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[18px] rounded-md"
+        className="flex LgLgBorder MobileBorder sm:top-[22%] top-[27%] xl:top-[26%] MediaCard2 left-[8%] lg:left-[-25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
           First Target
@@ -69,7 +69,7 @@ export const Target = () => {
       </div>
       <div
         data-aos="fade-left"
-        className="flex   MobileBorder2  xl:top-[44%] left-[8%] MediaCard3  lg:left-[25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[18px] rounded-md"
+        className="flex   MobileBorder2 top-[43%] sm:top-[37%] xl:top-[44%] left-[8%] MediaCard3  lg:left-[25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
           First Target

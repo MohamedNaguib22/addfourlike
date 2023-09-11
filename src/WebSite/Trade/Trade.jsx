@@ -16,7 +16,7 @@ export const Trade = () => {
         </h1>
       </HeaderOne>
       <HeaderTwo>
-        <h1 className="text-[26px]">P2P Trade</h1>
+        <h1 className="text-[20px] lg:text-[26px]">P2P Trade</h1>
         <p className="text-[12px] lg:w-[60%] my-[4px]">
           Peer-to-peer trade (or P2P Trade) is a marketplace where AddMeFast
           users can trade services in AMF Tokens directly with each other on
@@ -69,7 +69,7 @@ export const Trade = () => {
           visible within a minute.
         </p>
       </div>
-      <div className="text-center w-[60%] mx-auto my-[16px]">
+      <div className="text-center lg:w-[60%] mx-auto my-[16px]">
         <p className="font-bold text-[14px]">
           <span className="italic font-normal">Where to get AMF Tokens?</span> -
           currently You can swap Your crypto to
@@ -78,7 +78,7 @@ export const Trade = () => {
           AMF Tokens only at pancakeswap.finance (DEX Trade). For more
           information read also this article.
         </p>
-        <button className="bg-black/90 text-white w-[250px] h-[50px] my-[20px] rounded-lg text-[18px]">
+        <button className="bg-black/90 text-white w-[220px] h-[50px] my-[20px] rounded-lg text-[16px]">
           Get AMF Token Now
         </button>
         <p className="font-extrabold mb-[4px]">It's IMPORTANT to</p>

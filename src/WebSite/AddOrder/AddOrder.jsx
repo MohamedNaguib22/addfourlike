@@ -6,13 +6,13 @@ export const AddOrder = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
           <p>$</p>
           <h1>By buying points with AMF Tokens, you get 50% More</h1>
         </div>
       </HeaderOne>
       <HeaderTwo>
-        <h1 className=" text-[26px]">Add Order - FREE AMF Tokens</h1>
+        <h1 className="text-[20px] lg:text-[26px]">Add Order - FREE AMF Tokens</h1>
         <p className="text-[15px] w-[80%] mx-auto font-normal">
           Peer-to-peer tasks (Add Order) is a marketplace where Add4Like users
           can complete tasks in AMF Tokens directly with each other on their own

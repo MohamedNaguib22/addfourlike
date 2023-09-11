@@ -11,7 +11,7 @@ export const FBShare = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
           <h1>
             📢 Join the affiliate program and earn a lifetime 5% of the points
             collected in the "FREE Points" section.

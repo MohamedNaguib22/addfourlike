@@ -18,17 +18,17 @@ export const AddSite = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex lg:items-center text-[14px] lg:text-[16px] gap-2">
           <p>$</p>
           <h1>By buying points with AMF Tokens, you get 50% More</h1>
         </div>
       </HeaderOne>
       <HeaderTwo>
-        <h1 className="text-[28px] font-medium">Add / Edit Content</h1>
+        <h1 className="text-[20px] lg:text-[26px] font-medium">Add / Edit Content</h1>
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center mb-[40px]">
         <form className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
-        {/* Type */}
+          {/* Type */}
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="Type">
               Type:
@@ -95,14 +95,17 @@ export const AddSite = () => {
             </div>
           </div>
           {/* Total */}
-          <div className="flex items-center gap-[10px] mb-[16px]">
+          <div className="flex items-center ml-[-36px] sm:ml-0 gap-[10px] mb-[16px]">
             <div className="flex gap-1">
-              <label className="w-[120px] text-right" htmlFor="FB post url">
+              <label
+                className=" sm:text-[16px] text-[14px] w-[120px] text-right"
+                htmlFor="FB post url"
+              >
                 Total Clicks:
               </label>
               <input
                 type="number"
-                className="py-[8px] text-center w-[120px] rounded-lg border-[2px] border-gray-300"
+                className="py-[6px] sm:py-[8px] text-center w-[80px] sm:w-[120px] rounded-lg border-[2px] border-gray-300"
                 required
                 minLength={2}
                 disabled={!switchBtn ? true : false}
@@ -110,29 +113,34 @@ export const AddSite = () => {
             </div>
             <div
               onClick={handelSwitch}
-              className="bg-white cursor-pointer w-[100px] h-[42px] rounded-md relative z-[2] flex items-center justify-between"
+              className="bg-white cursor-pointer w-[80px] sm:w-[100px] h-[42px] rounded-md relative z-[2] flex items-center justify-between"
             >
-              <p className="pl-[10px]">on</p>
-              <p className="pr-[10px]">off</p>
+              <p className="pl-[10px] text-[14px] sm:text-[16px] ">on</p>
+              <p className="pr-[10px] text-[14px] sm:text-[16px] ">off</p>
               <div
-                className={`absolute top-0 bg-black text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
+                className={`absolute text-[14px] sm:text-[16px] top-0 bg-black text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
                   switchBtn ? "left-0" : "right-0"
                 }`}
               >
                 {switchBtn ? "on" : "off"}
               </div>
             </div>
-            <p className="text-[14px] font-normal">Total clicks limit</p>
+            <p className="text-[12px] sm:text-[14px] font-normal">
+              Total clicks limit
+            </p>
           </div>
           {/* Daily */}
-          <div className="flex items-center gap-[10px] mb-[16px]">
+          <div className="flex items-center  ml-[-36px] sm:ml-0 gap-[10px] mb-[16px]">
             <div className="flex gap-1">
-              <label className="w-[120px] text-right" htmlFor="FB post url">
+              <label
+                className="text-[14px] sm:text-[16px] w-[120px] text-right"
+                htmlFor="FB post url"
+              >
                 Daily Clicks:
               </label>
               <input
                 type="number"
-                className="py-[8px] text-center w-[120px] rounded-lg border-[2px] border-gray-300"
+                className="py-[6px] sm:py-[8px] text-center w-[80px] sm:w-[120px] rounded-lg border-[2px] border-gray-300"
                 required
                 minLength={2}
                 disabled={!switchBtnTwo ? true : false}
@@ -140,19 +148,21 @@ export const AddSite = () => {
             </div>
             <div
               onClick={handelSwitchTwo}
-              className="bg-white cursor-pointer w-[100px] h-[42px] rounded-md relative z-[2] flex items-center justify-between"
+              className="bg-white cursor-pointer w-[80px] sm:w-[100px] h-[42px] rounded-md relative z-[2] flex items-center justify-between"
             >
-              <p className="pl-[10px]">on</p>
-              <p className="pr-[10px]">off</p>
+              <p className="pl-[10px] text-[14px] sm:text-[16px] ">on</p>
+              <p className="pr-[10px] text-[14px] sm:text-[16px] ">off</p>
               <div
-                className={`absolute top-0 bg-black text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
+                className={`absolute top-0 text-[14px] sm:text-[16px]  bg-black text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
                   switchBtnTwo ? "left-0" : "right-0"
                 }`}
               >
                 {switchBtnTwo ? "on" : "off"}
               </div>
             </div>
-            <p className="text-[14px] font-normal">Daily clicks limit</p>
+            <p className="text-[12px] sm:text-[14px] font-normal">
+              Daily clicks limit
+            </p>
           </div>
           <div className="flex items-center gap-[10px] mb-[16px]">
             <div className="flex gap-1 items-center">
@@ -179,7 +189,7 @@ export const AddSite = () => {
         </form>
       </div>
       <HeaderOne>
-        <h1 className="w-[98%] lg:w-[60%] text-center font-normal py-[20px]">
+        <h1 className="w-[98%] lg:w-[60%] lg:text-[16px] text-[14px] text-center font-normal py-[20px]">
           The higher the CPC of your site/page, the more likely you are to get
           it seen, which means that the rate of getting likes/followers will be
           high. You can add an unlimited number of sites/pages. Please read our

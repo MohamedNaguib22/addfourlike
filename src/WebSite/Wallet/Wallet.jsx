@@ -11,7 +11,7 @@ export const Wallet = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex lg:items-center text-[14px] lg:text-[16px]">
           <p>📢</p>
           <h1>
             Join the affiliate program and earn a lifetime 5% of the points

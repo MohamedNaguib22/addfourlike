@@ -6,7 +6,7 @@ export const Service = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
           <p>$</p>
           <h1>By buying points with AMF Tokens, you get 50% More</h1>
         </div>

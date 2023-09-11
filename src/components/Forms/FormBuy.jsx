@@ -22,7 +22,7 @@ export const FormBuy = () => {
       >
         <div>
           <label className="text-[20px] font-medium">Service</label>
-          <h1 className="flex items-center text-[20px] gap-2 mb-[16px] py-[14px] rounded-md bg-black text-white px-[26px]">
+          <h1 className="flex items-center text-[14px] lg:text-[20px] gap-2 lg:mb-[16px] py-[14px] rounded-md bg-black text-white px-[26px]">
             <span className="bg-white text-black font-medium px-[8px] rounded-sm">
               9
             </span>

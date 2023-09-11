@@ -9,7 +9,7 @@ export const ByPoints = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex lg:items-center text-[14px] lg:text-[16px]">
           <p>📢</p>
           <h1>
             Join the affiliate program and earn a lifetime 5% of the points
@@ -18,8 +18,8 @@ export const ByPoints = () => {
         </div>
       </HeaderOne>
       <HeaderTwo>
-        <h1 className="text-[26px]">Buy Points</h1>
-        <p className="text-[14px] font-normal w-[62%]">
+        <h1 className="text-[20px] lg:text-[26px]">Buy Points</h1>
+        <p className="text-[14px] font-normal lg:w-[62%]">
           You can choose one of the available payment methods and buy points for
           Social Media Marketing and Cryptocurrency promotion. For every bundle
           purchased from Binance, Payrexx and PaymentWall, you will receive{" "}
@@ -67,11 +67,11 @@ export const ByPoints = () => {
             <span className="italic text-green-600">
               Click here to read more
             </span>
-              <img
-                src={Logo}
-                alt=""
-                className="absolute right-[3%] w-[38px] top-[50%] translate-y-[-50%]"
-              />
+            <img
+              src={Logo}
+              alt=""
+              className="absolute right-[3%] w-[38px] top-[50%] translate-y-[-50%]"
+            />
           </Link>
         </div>
       </div>

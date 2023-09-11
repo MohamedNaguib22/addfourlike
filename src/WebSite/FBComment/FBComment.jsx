@@ -8,7 +8,7 @@ export const FBComment = () => {
   return (
     <div>
       <HeaderOne>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
           <h1>
             📢 Join the affiliate program and earn a lifetime 5% of the points
             collected in the "FREE Points" section.
@@ -18,14 +18,14 @@ export const FBComment = () => {
       <HeaderTwo>
         <h1>Facebook Comment</h1>
       </HeaderTwo>
-      <div className="text-[14px] lg:text-[16px] w-[98%] lg:w-[60%] container text-center">
+      <div className="text-[14px] lg:text-[16px] w-full lg:w-[60%] container text-center">
         <div className="bg-black text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
           <h1>
             For this section only - click the FOLLOW button if there is no LIKE
             button in the pop-up window
           </h1>
         </div>
-        <div className="bg-gray-600 w-[90%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
+        <div className="bg-gray-600 text-[14px] lg:text-[16px] w-[90%] mx-auto text-white h-[60px] flex justify-center items-center rounded-md font-medium mb-[16px]">
           <p>
             Wait 2-3 seconds after Follow/Like/Subscribe and then close pop-up
             window.
@@ -37,7 +37,7 @@ export const FBComment = () => {
         <Facebook Btn="Comment" />
       </div>
       <FaceBookParent>
-        <p className="w-[98%] lg:w-[60%] mx-auto mb-[16px]">
+        <p className="lg:text-[16px] text-[14px] w-[98%] lg:w-[60%] mx-auto mb-[16px]">
           To get free points by liking other's posts click on the "Comment"
           button, then the post will be opened with popUp and after Commenting
           the post CLOSE the popUp yourself. The users who don't close manually

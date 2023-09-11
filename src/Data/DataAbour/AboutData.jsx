@@ -7,7 +7,7 @@ export const AboutData = (props) => {
         <FaCheckCircle size={20} />
       </div>
       <div>
-        <h1 className="text-[18px] font-medium">{props.facebook}</h1>
+        <h1 className="xl:text-[16px] text-[12px] sm:text-[14px] font-medium">{props.facebook}</h1>
       </div>
     </div>
   );

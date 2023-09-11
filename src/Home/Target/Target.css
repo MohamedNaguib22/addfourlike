@@ -37,3 +37,15 @@
     top: 36%;
   }
 }
+@media (max-width : 767px) {
+  .MediaCard {
+    top: 13%;
+  }
+  .MediaCard2 {
+    top: 29%;
+  }
+  .MediaCard3 {
+    top: 46%;
+  }
+}
+

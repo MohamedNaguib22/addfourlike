@@ -5,9 +5,9 @@ import { FaFacebookF } from "react-icons/fa";
 import { CiBasketball } from "react-icons/ci";
 export const Footer = () => {
   return (
-    <div className="relative BgFooter bg-cover bg-no-repeat w-full pb-[100px] lg:py-0 h-auto pt-[100px]">
-      <div className="container grid lg:grid-cols-4 grid-cols-1  items-center relative h-full ">
-        <div className="w-[500px]">
+    <div className="relative BgFooter bg-cover bg-no-repeat w-full">
+      <div className="container grid lg:grid-cols-4 grid-cols-1  items-center relative pb-[50px]">
+        <div>
           <img src={FooterImg} alt="" />
         </div>
         <ul className="flex flex-col gap-[30px] text-black text-center pt-0 lg:pt-[200px]">

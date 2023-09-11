@@ -9,7 +9,7 @@ import {
 import Timer from "./Timer";
 export const Times = () => {
   return (
-    <div className="flex container flex-col items-center w-full mx-auto py-[100px] relative h-auto">
+    <div className="flex container flex-col items-center relative py-[100px]">
       <h1 className="text-black text-[28px] lg:text-[38px] mb-[50px] font-medium text-center">
         Timer Section
       </h1>

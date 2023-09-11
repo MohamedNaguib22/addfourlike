@@ -10,12 +10,11 @@ export const HeroSection = () => {
   const contextPop = useContext(PopUp);
   const functionModel = contextPop.ModelUp;
   return (
-    <>
-      <div className=" h-auto">
-        <div className="BgHeroSection h-[880px] bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1270px] top-[-2%] absolute right-0"></div>
-        <div className="Responsive container mt-[120px] lg:py-[100px] ">
+    <div className="pb-[150px]">
+        <div className="BgHeroSection h-[880px] bg-no-repeat bg-cover bg-center object-cover w-full md:w-[1270px] top-[-5%] absolute right-0"></div>
+        <div className="Responsive container lg:mt-[120px] ">
           <div>
-            <h1 className="uppercase text-center lg:text-start mt-[60px] lg:mt-0 ml-0 lg:ml-9 font-[500]  text-[48px] lg:text-[58px] leading-[76px] HeroFont italic  text-black ">
+            <h1 className="uppercase text-center lg:text-start mt-[60px] lg:mt-0 ml-0 lg:ml-9 font-[500]  text-[40px] lg:text-[50px] leading-[76px] HeroFont italic  text-black ">
               add4like
             </h1>
             <div className="flex flex-col items-center lg:items-start">
@@ -97,7 +96,6 @@ export const HeroSection = () => {
             <img src={Hero} alt="" className="max-w-full h-auto" />
           </div>
         </div>
-      </div>
-    </>
+    </div>
   );
 };

@@ -1,6 +1,6 @@
 import { FaCheck, FaHourglassEnd } from "react-icons/fa";
 import "./Target.css";
-export const Target = () => {
+export const  Target = () => {
   return (
     <div className="relative h-[980px] container py-[100px]">
       <div className="h-[74%] w-[3px] bg-gray-200 absolute left-[10%] lg:left-[50%]">
@@ -33,7 +33,7 @@ export const Target = () => {
           First Target
         </h1>
         <p className="text-black font-medium mb-3 text-[14px] md:text-[16px]">
-          1000 Users and 10,000 EX-Change
+          1000 Users and 10.000 EX-Change
         </p>
         <p className="text-black font-medium lg:hidden block text-[12px] md:text-[14px]">
           2023 - SEP
@@ -44,10 +44,10 @@ export const Target = () => {
         className="flex MediaCard xl:top-[10%] sm:top-[9%] top-[12%] MobileBorder2  left-[8%] lg:left-[25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[10px] md:py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
-          First Target
+          Second Target
         </h1>
         <p className="text-black font-medium mb-3 text-[14px] md:text-[16px]">
-          1000 Users and 10,000 EX-Change
+          10.000 Users and 100.000 EX-Change
         </p>
         <p className="text-black font-medium lg:hidden block  text-[12px] md:text-[14px]">
           2023 - SEP
@@ -58,10 +58,10 @@ export const Target = () => {
         className="flex LgLgBorder MobileBorder sm:top-[22%] top-[27%] xl:top-[26%] MediaCard2 left-[8%] lg:left-[-25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
-          First Target
+          Third Target
         </h1>
         <p className="text-black font-medium mb-3 text-[14px] md:text-[16px]">
-          1000 Users and 10,000 EX-Change
+          50.000 Users and 50.000 EX-Change
         </p>
         <p className="text-black font-medium lg:hidden block text-[12px] md:text-[14px]">
           2023 - SEP
@@ -72,10 +72,10 @@ export const Target = () => {
         className="flex   MobileBorder2 top-[43%] sm:top-[37%] xl:top-[44%] left-[8%] MediaCard3  lg:left-[25%] relative  flex-col lg:justify-start justify-end border-b-[3px] w-[75%] mx-auto lg:w-[40%] bg-gray-100 pl-[20px] py-[18px] rounded-md"
       >
         <h1 className="text-black text-[16px] md:text-[18px] mb-3 font-bold">
-          First Target
+          Fourth Target
         </h1>
         <p className="text-black font-medium mb-3 text-[14px] md:text-[16px]">
-          1000 Users and 10,000 EX-Change
+          100.000 Users and 1M EX-Change
         </p>
         <p className="text-black font-medium lg:hidden block text-[12px] md:text-[14px]">
           2023 - SEP

@@ -1,8 +1,7 @@
 import "./Footer.css";
 import FooterImg from "../../../public/Assets/img/Illustration4.png";
 import { Link } from "react-router-dom";
-import { FaFacebookF } from "react-icons/fa";
-import { CiBasketball } from "react-icons/ci";
+import { FaFacebookF, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 export const Footer = () => {
   return (
     <div className="relative BgFooter bg-cover bg-no-repeat w-full">
@@ -10,21 +9,6 @@ export const Footer = () => {
         <div>
           <img src={FooterImg} alt="" />
         </div>
-        <ul className="flex flex-col gap-[30px] text-black text-center pt-0 lg:pt-[200px]">
-          <li className="font-bold text-[20px] ">Need Help?</li>
-          <li className="text-[18px] font-medium">
-            <a href="#">Privacy</a>
-          </li>
-          <li className="text-[18px] font-medium">
-            <a href="#">Policy</a>
-          </li>
-          <li className="text-[18px] font-medium">
-            <a href="#">Support</a>
-          </li>
-          <li className="text-[18px] font-medium">
-            <a href="#">Terms</a>
-          </li>
-        </ul>
         <ul className="flex flex-col gap-[30px] text-black text-center pt-0 lg:pt-[200px]">
           <li className="text-[20px] font-bold">Useful links</li>
           <li className="text-[18px] font-medium">
@@ -36,8 +20,17 @@ export const Footer = () => {
           <li className="text-[18px] font-medium">
             <a href="#">Services</a>
           </li>
+        </ul>
+        <ul className="flex flex-col gap-[30px] text-black text-center pt-0 lg:pt-[200px]">
+          <li className="font-bold text-[20px] ">Need Help?</li>
           <li className="text-[18px] font-medium">
-            <Link to="/contact">Contact</Link>
+            <a href="#">Privacy</a>
+          </li>
+          <li className="text-[18px] font-medium">
+            <a href="#">Help</a>
+          </li>
+          <li className="text-[18px] font-medium">
+            <a href="#">Terms</a>
           </li>
         </ul>
         <ul className="flex flex-col gap-[30px] text-black text-center items-center pt-0 lg:pt-[200px]">
@@ -48,13 +41,20 @@ export const Footer = () => {
           </li>
           <li>
             <a href="#">
-              <CiBasketball className="text-black" size={30} />
+              <FaTelegramPlane className="text-black" size={30} />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaWhatsapp className="text-black" size={30} />
             </a>
           </li>
           <li className="w-[233px] ">
-            <button className="BtnHero text-white  Font uppercase w-[233px] h-[56px] rounded-[29px] flex items-center justify-center ">
-              try for free
-            </button>
+            <Link to="/contact">
+              <button className="BtnHero text-white  Font uppercase w-[233px] h-[56px] rounded-[29px] flex items-center justify-center ">
+                Contact
+              </button>
+            </Link>
           </li>
         </ul>
       </div>

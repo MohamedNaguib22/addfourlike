@@ -17,7 +17,7 @@ export const Contact = () => {
             Any Question or Suggestion? Just write us a message!
           </h1>
         </div>
-        <div className="container grid lg:grid-cols-3 grid-col-1 gap-[20px]">
+        <div className="container mt-[40px] grid lg:grid-cols-3 grid-col-1 gap-[20px]">
           <div className="bg-gray-600 mt-[20px] flex flex-col gap-[40px] lg:items-start lg:justify-start justify-center items-center h-fit pl-[10px] pr-[50x] py-[60px] text-white rounded-lg">
             <div>
               <h1 className="text-[34px] font-bold">Contact information</h1>
@@ -65,7 +65,7 @@ export const Contact = () => {
                 />
                 <label
                   htmlFor="floating_user"
-                  className="peer-focus:font-medium absolute text-[18px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-[18px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   User Name
                 </label>
@@ -81,7 +81,7 @@ export const Contact = () => {
                 />
                 <label
                   htmlFor="floating_email"
-                  className="peer-focus:font-medium absolute text-[18px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-[18px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Email
                 </label>
@@ -150,7 +150,7 @@ export const Contact = () => {
                 />
                 <label
                   htmlFor="floating_message"
-                  className="peer-focus:font-medium absolute text-[18px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-[18px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Write your message
                 </label>

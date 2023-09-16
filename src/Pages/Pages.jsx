@@ -21,6 +21,16 @@ import { ProfileFollow } from "../WebSite/ProfileFollow/ProfileFollow";
 import { FBComment } from "../WebSite/FBComment/FBComment";
 import { Trade } from "../WebSite/Trade/Trade";
 import { PostLike } from "../WebSite/PostLike/PostLike";
+import { Dashboard } from "./Dashboard/Dashboard";
+import { Users } from "./Dashboard/Users/Users";
+import { Order } from "./Dashboard/Order/Order";
+import { ServiceDash } from "./Dashboard/ServiceDash/ServiceDash";
+import { Exchange } from "./Dashboard/Exchange/Exchange";
+import { FbPage } from "./Dashboard/Exchange/FbPage/FbPage";
+import { Setting } from "./Dashboard/Setting/Setting";
+import { DashboardShow } from "./Dashboard/DashboardShow/DashboardShow";
+import { Money } from "./Dashboard/WalletDash/Money/Money";
+import { Deposit } from "./Dashboard/Setting/Deposit/Deposit";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;
@@ -29,7 +39,9 @@ export const Pages = () => {
       <Forms />
       <span
         className={`${
-          ContextPop ? "blur-[10px] absolute w-full opacity-[1] visible overflow-hidden" : ""
+          ContextPop
+            ? "blur-[10px] absolute w-full opacity-[1] visible overflow-hidden"
+            : ""
         }`}
       >
         <Routes>
@@ -52,6 +64,18 @@ export const Pages = () => {
             <Route path="fb-post" element={<PostLike />} />
             <Route path="fb-profile" element={<ProfileFollow />} />
             <Route path="fb-comment" element={<FBComment />} />
+          </Route>
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route index element={<DashboardShow />} />
+            <Route path="users" element={<Users />} />
+            <Route path="order" element={<Order />} />
+            <Route path="service" element={<ServiceDash />} />
+            <Route path="exchange" element={<Exchange />} />
+            <Route path="fb-page" element={<FbPage />} />
+            <Route path="wallet" element={<Money />} />
+            <Route path="money" element={<Money />} />
+            <Route path="setting" element={<Setting />} />
+            <Route path="deposit" element={<Deposit />} />
           </Route>
         </Routes>
       </span>

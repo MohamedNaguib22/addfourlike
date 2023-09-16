@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { useContext, useState } from "react";
 import { PopUp } from "../../Context/Context";
+import { HashLink } from "react-router-hash-link";
 const Navbar = (props) => {
   const [nav, setNav] = useState(false);
   const contextPop = useContext(PopUp);
@@ -20,22 +21,21 @@ const Navbar = (props) => {
             <img src={logo} alt="" />
           </Link>
         </div>
-        <ul
-          className={`hidden items-center gap-[85px] lg:flex ${props.color}`}>
+        <ul className={`hidden items-center gap-[85px] lg:flex ${props.color}`}>
           <li>
             <a href="#" className="uppercase">
               services
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase">
+            <HashLink smooth to="/#about" className="uppercase">
               about us
-            </a>
+            </HashLink>
           </li>
           <li>
-            <Link to="/contact" className="uppercase">
+            <HashLink smooth to="/#contact" className="uppercase">
               contact
-            </Link>
+            </HashLink>
           </li>
         </ul>
         <div>

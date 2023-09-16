@@ -2,6 +2,7 @@ import "./Footer.css";
 import FooterImg from "../../../public/Assets/img/Illustration4.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 export const Footer = () => {
   return (
     <div className="relative BgFooter bg-cover bg-no-repeat w-full">
@@ -15,7 +16,7 @@ export const Footer = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="text-[18px] font-medium">
-            <a href="#">About Us</a>
+            <HashLink smooth to="/#about">About Us</HashLink>
           </li>
           <li className="text-[18px] font-medium">
             <a href="#">Services</a>
@@ -50,7 +51,7 @@ export const Footer = () => {
             </a>
           </li>
           <li className="w-[233px] ">
-            <Link to="/contact">
+            <Link to="/contact" id="contact">
               <button className="BtnHero text-white  Font uppercase w-[233px] h-[56px] rounded-[29px] flex items-center justify-center ">
                 Contact
               </button>

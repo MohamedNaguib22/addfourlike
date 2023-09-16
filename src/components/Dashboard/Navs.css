@@ -1,0 +1,9 @@
+.active{
+  @apply bg-blue-400 
+}
+.active p {
+  @apply text-white
+}
+.group p,.active .white {
+  @apply text-white
+}

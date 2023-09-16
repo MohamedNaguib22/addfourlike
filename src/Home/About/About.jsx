@@ -4,7 +4,7 @@ import LogoAbout from "../../../public/Assets/img/Group1.png";
 import "./About.css";
 export const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="grid lg:grid-cols-2 grid-cols-1 items-center place-items-end py-[100px]">
         <div className="lg:text-start text-center w-full xl:w-[80%] lg:mt-[150px]">
           <h1 className="text-black text-[18px] lg:text-[20px] font-medium mb-[16px] ">

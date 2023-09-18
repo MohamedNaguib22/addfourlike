@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaAngleDown, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import { Date } from "../../../../components/Date/Date";
 
 export const Deposit = () => {
   const [modelUp, setModelUp] = useState(false);
@@ -16,10 +17,7 @@ export const Deposit = () => {
           Deposit
         </p>
       </div>
-      <div className="mb-[8px] flex items-center gap-1 bg-gray-200 w-[130px] h-[30px] justify-center rounded-xl font-medium text-[17px]">
-        <p>01/10/2023</p>
-        <FaAngleDown />
-      </div>
+      <Date className="top-[17%] left-[8%]" />
       <div className="w-full bg-white h-[500px] pb-[50px] mt-[20px] rounded-2xl pt-[6px] px-[10px]">
         <h1 className="Text-Header mb-[8px]">Deposit</h1>
         <h2 className="text-[19px] mb-[8px] text-gray-500 font-[400]">
@@ -60,11 +58,17 @@ export const Deposit = () => {
         </div>
       </div>
       <div
-        className={`absolute w-[35%] h-[550px] bg-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] border-[2px] border-gray-400 rounded-3xl $${modelUp ? "opacity-[1] visible" : "opacity-0 invisible"} `}
+        className={`absolute w-[35%] h-[550px] bg-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] border-[2px] border-gray-400 rounded-3xl $${
+          modelUp ? "opacity-[1] visible" : "opacity-0 invisible"
+        } `}
       >
         <div className="flex items-center pl-[10px] pt-[10px] border-b-[2px] border-gray-400 pb-[16px]">
           <h1 className="Text-Header flex-1">Edit payment methods</h1>
-          <FaTimes onClick={ModelUp} className="mt-[6px] mr-[40px] cursor-pointer" size={20} />
+          <FaTimes
+            onClick={ModelUp}
+            className="mt-[6px] mr-[40px] cursor-pointer"
+            size={20}
+          />
         </div>
       </div>
     </div>

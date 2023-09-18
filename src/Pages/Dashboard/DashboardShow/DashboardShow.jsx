@@ -1,14 +1,18 @@
 import { FaAngleDown } from "react-icons/fa";
 import { HiUsers } from "react-icons/hi";
+import { Date } from "../../../components/Date/Date";
+import { Chart } from "../../../components/Chart/Chart";
+import { useState } from "react";
 
 export const DashboardShow = () => {
+  const [click, setClick] = useState("Month");
+  function Click(click) {
+    setClick(click);
+  }
   return (
-    <div className="px-[38px] pt-[16px]">
+    <div className="px-[38px] pt-[16px] ">
       <h1 className="Text-Header mb-[8px]">Dashboard</h1>
-      <div className="mb-[8px] flex items-center gap-1 bg-gray-200 w-[130px] h-[30px] justify-center rounded-xl font-medium text-[17px]">
-        <p>01/10/2023</p>
-        <FaAngleDown />
-      </div>
+      <Date className="top-[17%] left-[22%]" />
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[40px] mb-[26px]">
         <div className="bg-white py-[6px] pl-[25px] pr-[10px] flex items-center rounded-2xl">
           <div className="flex flex-col gap-1 flex-1">
@@ -47,21 +51,42 @@ export const DashboardShow = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white h-[520px] rounded-2xl pt-[6px] px-[10px]">
+      <div className="w-full bg-white h-auto rounded-2xl pb-[18px] pt-[6px] px-[10px]">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-1 bg-gray-200 w-[110px] h-[40px] justify-center rounded-xl">
             <h1 className="Text-Header">Users</h1>
             <FaAngleDown className="mt-[6px]" />
           </div>
           <div className="flex ">
-            <button className="Text-Header bg-blue-400 px-[10px] py-[4px] rounded-s-xl">
+            <button
+              onClick={() => Click("Month")}
+              className={`Text-Header  px-[10px] py-[4px] rounded-s-xl ${
+                click === "Month" ? "bg-blue-400" : "bg-gray-200"
+              }`}
+            >
               Month
             </button>
-            <button className="Text-Header bg-gray-200 px-[20px] py-[4px] rounded-e-xl">
+            <button
+              onClick={() => Click("Year")}
+              className={`Text-Header  px-[16px] py-[4px] rounded-e-xl ${
+                click === "Year" ? "bg-blue-400" : "bg-gray-200"
+              }`}
+            >
               Year
             </button>
           </div>
         </div>
+        {click === "Month" ? (
+          <div className="py-[20px]">
+            <Chart color="red" />
+          </div>
+        ) : (
+          click === "Year" && (
+            <div className="py-[20px]">
+              <Chart color="green" />
+            </div>
+          )
+        )}
       </div>
     </div>
   );

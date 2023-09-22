@@ -25,12 +25,15 @@ import { Dashboard } from "./Dashboard/Dashboard";
 import { Users } from "./Dashboard/Users/Users";
 import { Order } from "./Dashboard/Order/Order";
 import { ServiceDash } from "./Dashboard/ServiceDash/ServiceDash";
-import { Exchange } from "./Dashboard/Exchange/Exchange";
 import { FbPage } from "./Dashboard/Exchange/FbPage/FbPage";
 import { Setting } from "./Dashboard/Setting/Setting";
 import { DashboardShow } from "./Dashboard/DashboardShow/DashboardShow";
 import { Money } from "./Dashboard/WalletDash/Money/Money";
 import { Deposit } from "./Dashboard/Setting/Deposit/Deposit";
+import { Withdraw } from "./Dashboard/Setting/Withdraw";
+import { Referral } from "./Dashboard/Setting/Referral";
+import { P2P } from "./Dashboard/Setting/P2P";
+import { Bonus } from "./Dashboard/Setting/Bonus";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;
@@ -70,12 +73,16 @@ export const Pages = () => {
             <Route path="users" element={<Users />} />
             <Route path="order" element={<Order />} />
             <Route path="service" element={<ServiceDash />} />
-            <Route path="exchange" element={<Exchange />} />
+            <Route path="exchange" element={<FbPage />} />
             <Route path="fb-page" element={<FbPage />} />
             <Route path="wallet" element={<Money />} />
             <Route path="money" element={<Money />} />
             <Route path="setting" element={<Setting />} />
             <Route path="deposit" element={<Deposit />} />
+            <Route path="withdraw" element={<Withdraw />} />
+            <Route path="referral" element={<Referral />} />
+            <Route path="daily-bonus" element={<Bonus />} />
+            <Route path="p2p" element={<P2P />} />
           </Route>
         </Routes>
       </span>

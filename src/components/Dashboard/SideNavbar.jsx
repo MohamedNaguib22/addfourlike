@@ -51,7 +51,7 @@ export const SideNavbar = () => {
         </li>
         <li onClick={() => Arrow("Service")}>
           <NavLink to="service" className="flex items-center gap-2 LinkFirst">
-            <div className="bg-white py-[4px] px-[10px]">
+            <div className="bg-white py-[4px] px-[10px]  rounded-lg">
               <FaBars size={21} />
             </div>
             <p className=" font-medium">Service</p>
@@ -207,6 +207,36 @@ export const SideNavbar = () => {
                     <FaStar size={18} />
                   </div>
                   <p className=" font-medium">Withdraw</p>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="referral"
+                  className="flex items-center gap-2 LinkFirst"
+                >
+                  <div className="bg-white py-[4px] px-[10px] rounded-lg">
+                    <FaStar size={18} />
+                  </div>
+                  <p className=" font-medium">Referral</p>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="daily-bonus"
+                  className="flex items-center gap-2 LinkFirst"
+                >
+                  <div className="bg-white py-[4px] px-[10px] rounded-lg">
+                    <FaStar size={18} />
+                  </div>
+                  <p className=" font-medium">Daily Bonus</p>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="p2p" className="flex items-center gap-2 LinkFirst">
+                  <div className="bg-white py-[4px] px-[10px] rounded-lg">
+                    <FaStar size={18} />
+                  </div>
+                  <p className=" font-medium">P2P</p>
                 </NavLink>
               </li>
             </ul>

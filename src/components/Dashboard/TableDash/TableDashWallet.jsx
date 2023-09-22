@@ -1,7 +1,51 @@
-export const TableDash = () => {
+export const TableDashWallet = () => {
   return (
     <div className="relative mt-[8px] overflow-x-auto sm:rounded-lg">
       <table className="w-full text-sm text-left text-black ">
+        <thead className="Text-Paragraph text-black uppercase bg-white  border-b-[2px] border-b-solid border-b-black">
+          <tr>
+            <th scope="col" className="px-6  py-3 text-blue-500 ">
+              <div className="flex justify-center items-center mx-auto">
+                <span>All</span>
+                <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
+                  45
+                </span>
+              </div>
+            </th>
+            <th scope="col" className="px-6 text-center py-3 ">
+              <div className="flex justify-center items-center mx-auto">
+                <span>Deposit</span>
+                <span className="text-[12px] font-medium bg-gray-100  w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+                  30
+                </span>
+              </div>
+            </th>
+            <th scope="col" className="px-6 text-center py-3 ">
+              <button className="flex justify-center items-center mx-auto">
+                <span>Withdraw</span>
+                <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+                  5
+                </span>
+              </button>
+            </th>
+            <th scope="col" className="px-6 text-center py-3">
+              <button className="flex justify-center items-center mx-auto">
+                <span>P2P</span>
+                <span className="text-[12px] font-medium bg-gray-100  w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+                  5
+                </span>
+              </button>
+            </th>
+            <th scope="col" className="px-6 text-center py-3 ">
+              <button className="flex justify-center items-center mx-auto">
+                <span>Buy Point</span>
+                <span className="text-[12px] font-medium bg-gray-100  w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+                  5
+                </span>
+              </button>
+            </th>
+          </tr>
+        </thead>
         <thead className="Text-Paragraph text-gray-700 uppercase bg-gray-50 ">
           <tr>
             <th scope="col" className="px-6 text-center py-3 ">
@@ -104,9 +148,7 @@ export const TableDash = () => {
             <td className="px-6 text-center py-4 text-red-500">Pending</td>
             <td className="px-6 text-center py-4">5 Oct , 2023</td>
             <td className="py-6 text-center px-6">
-              <button
-                className="bg-[#007BFF99] text-black w-[100px] py-[8px] rounded-lg"
-              >
+              <button className="bg-[#007BFF99] text-black w-[100px] py-[8px] rounded-lg">
                 Action &gt;
               </button>
             </td>

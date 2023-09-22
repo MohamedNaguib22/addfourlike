@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 
-export const Date = (props) => {
+export const DateMonth = (props) => {
   const [date, setDate] = useState(false);
   function Date() {
     setDate(!date);
@@ -15,7 +15,7 @@ export const Date = (props) => {
       <p>01/10/2023</p>
       <FaAngleDown />
       <div
-        className={`absolute pt-[18px] pb-[24px] px-[16px] w-fit h-auto bg-black/90 shadow-lg rounded-2xl transition-all duration-[0.2s] ${
+        className={`absolute pt-[18px] z-[999] pb-[24px] px-[16px] w-fit h-auto bg-black/90 shadow-lg rounded-2xl transition-all duration-[0.2s] ${
           props.className
         } ${date ? "opacity-[1] visible" : "opacity-0 invisible"}`}
       >

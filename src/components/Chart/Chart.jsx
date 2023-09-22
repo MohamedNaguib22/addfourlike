@@ -3,23 +3,23 @@ import { Card, Title, AreaChart } from "@tremor/react";
 const chartdata = [
   {
     date: "Jan 22",
-    SemiAnalysis: 2890,
-    "The Pragmatic Engineer": 2338,
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
   },
   {
     date: "Feb 22",
-    SemiAnalysis: 2756,
-    "The Pragmatic Engineer": 2103,
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
   },
   {
     date: "Mar 22",
-    SemiAnalysis: 3322,
-    "The Pragmatic Engineer": 2194,
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
   },
   {
     date: "Apr 22",
-    SemiAnalysis: 3470,
-    "The Pragmatic Engineer": 2108,
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
   },
   {
     date: "May 22",
@@ -27,9 +27,24 @@ const chartdata = [
     "The Pragmatic Engineer": 1812,
   },
   {
+    date: "May 62",
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
+  },
+  {
+    date: "May 22",
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
+  },
+  {
+    date: "May 22",
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
+  },
+  {
     date: "Jun 22",
-    SemiAnalysis: 3129,
-    "The Pragmatic Engineer": 1726,
+    SemiAnalysis: 0,
+    "The Pragmatic Engineer": 0,
   },
 ];
 

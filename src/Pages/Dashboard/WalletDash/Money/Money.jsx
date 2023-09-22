@@ -1,6 +1,6 @@
 import { FaAngleDown } from "react-icons/fa";
 import { HiUsers } from "react-icons/hi";
-import { TableDash } from "../../../../components/TableDash/TableDash";
+import { TableDashWallet } from "../../../../components/Dashboard/TableDash/TableDashWallet";
 
 export const Money = () => {
   return (
@@ -55,7 +55,7 @@ export const Money = () => {
         </div>
       </div>
       <div className="w-full bg-white h-auto pb-[50px] rounded-2xl pt-[6px] px-[10px]">
-      <TableDash />
+        <TableDashWallet />
       </div>
     </div>
   );

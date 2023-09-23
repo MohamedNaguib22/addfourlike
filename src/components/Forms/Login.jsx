@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { FaPlus, FaUser } from "react-icons/fa";
 import { FormContext } from "../../Context/ContextForm";
 import { PopUp } from "../../Context/Context";
-import { Link } from "react-router-dom";
 import "./Forms.css"
 
 export const Login = () => {
@@ -73,13 +72,13 @@ export const Login = () => {
           </label>
         </div>
         <div className="flex justify-center">
-          <Link
+          <button
             to="website"
             type="submit"
             className="text-white flex justify-center items-center bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[20px] w-[60%] lg:w-[200px] h-[50px] rounded-[20px] "
           >
             Login
-          </Link>
+          </button>
         </div>
         <div className="flex w-full justify-between text-white text-[16px]">
           <div className="flex items-center">

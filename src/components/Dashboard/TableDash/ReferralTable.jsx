@@ -6,20 +6,20 @@ export const ReferralTable = () => {
       <div className="text-[18px] font-medium w-full text-black uppercase bg-white  border-b-[2px] border-b-solid border-b-black">
         <div className="flex gap-[16px]">
           <div className="px-6  py-3 text-blue-500 ">
-            <div className="flex justify-center items-center mx-auto">
+            <button className="flex justify-center items-center mx-auto">
               <span>All</span>
               <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
                 3
               </span>
-            </div>
+            </button>
           </div>
           <div className="px-6 text-center py-3">
-            <div className="flex justify-center items-center ">
+            <button className="flex justify-center items-center ">
               <span>Top</span>
               <span className="text-[12px] font-medium bg-gray-100 px-[10px] w-auto h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 25
               </span>
-            </div>
+            </button>
           </div>
         </div>
       </div>

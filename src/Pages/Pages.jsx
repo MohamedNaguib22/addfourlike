@@ -35,6 +35,10 @@ import { Referral } from "./Dashboard/Setting/Referral";
 import { P2P } from "./Dashboard/Setting/P2P";
 import { Bonus } from "./Dashboard/Setting/Bonus";
 import { Point } from "./Dashboard/WalletDash/Point";
+import { FbProfile } from "./Dashboard/Exchange/FbProfile/FbProfile";
+import { FbPost } from "./Dashboard/Exchange/FbPost/FbPost";
+import { FbShare } from "./Dashboard/Exchange/FbShare/FbShare";
+import { FbComment } from "./Dashboard/Exchange/FbComment/FbComment";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;
@@ -76,6 +80,10 @@ export const Pages = () => {
             <Route path="service" element={<ServiceDash />} />
             <Route path="exchange" element={<FbPage />} />
             <Route path="fb-page" element={<FbPage />} />
+            <Route path="fb-profile" element={<FbProfile />} />
+            <Route path="fb-post" element={<FbPost />} />
+            <Route path="fb-share" element={<FbShare />} />
+            <Route path="fb-comment" element={<FbComment />} />
             <Route path="wallet" element={<Money />} />
             <Route path="money" element={<Money />} />
             <Route path="point" element={<Point />} />

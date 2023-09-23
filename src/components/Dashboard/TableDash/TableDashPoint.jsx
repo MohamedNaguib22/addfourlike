@@ -5,14 +5,14 @@ export const TableDashPoint = () => {
     <div className="relative mt-[8px] overflow-x-auto sm:rounded-lg">
       <div className="text-[18px] font-medium w-full flex items-center text-black uppercase bg-white  border-b-[2px] border-b-solid border-b-black">
         <div className="flex-1 flex gap-[46px]">
-          <div className="px-6  py-3 text-blue-500 ml-[35px]">
+          <button className="px-6  py-3 text-blue-500 ml-[35px]">
             <button className="flex justify-center items-center mx-auto ">
               <span>All</span>
               <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
                 45
               </span>
             </button>
-          </div>
+          </button>
           <div className="px-6 text-center py-3">
             <button className="flex justify-center items-center mx-auto">
               <span>Bay Point</span>

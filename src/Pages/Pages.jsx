@@ -34,6 +34,7 @@ import { Withdraw } from "./Dashboard/Setting/Withdraw";
 import { Referral } from "./Dashboard/Setting/Referral";
 import { P2P } from "./Dashboard/Setting/P2P";
 import { Bonus } from "./Dashboard/Setting/Bonus";
+import { Point } from "./Dashboard/WalletDash/Point";
 export const Pages = () => {
   const contextPop = useContext(PopUp);
   const ContextPop = contextPop.popUP;
@@ -77,6 +78,7 @@ export const Pages = () => {
             <Route path="fb-page" element={<FbPage />} />
             <Route path="wallet" element={<Money />} />
             <Route path="money" element={<Money />} />
+            <Route path="point" element={<Point />} />
             <Route path="setting" element={<Setting />} />
             <Route path="deposit" element={<Deposit />} />
             <Route path="withdraw" element={<Withdraw />} />

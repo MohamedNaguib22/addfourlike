@@ -9,7 +9,7 @@ export const TableDashUsers = () => {
           <div className="px-6  py-3 text-blue-500 ml-[35px]">
             <div className="flex justify-center items-center mx-auto">
               <span>All</span>
-              <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
+              <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
                 3
               </span>
             </div>
@@ -17,7 +17,7 @@ export const TableDashUsers = () => {
           <div className="px-6 text-center py-3">
             <div className="flex justify-center items-center mx-auto">
               <span>Ban</span>
-              <span className="text-[12px] font-medium bg-gray-100  w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+              <span className="text-[12px] font-medium bg-gray-100  w-auto h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 1
               </span>
             </div>
@@ -25,7 +25,7 @@ export const TableDashUsers = () => {
           <div className="px-6 text-center py-3">
             <button className="flex justify-center items-center mx-auto">
               <span>Active</span>
-              <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+              <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 2
               </span>
             </button>
@@ -34,7 +34,11 @@ export const TableDashUsers = () => {
         <form>
           <div className="border-gray-400 border-[2px] rounded-md py-[4px] bg-gray-200 flex gap-[12px] items-center pl-[10px]">
             <FaSearch />
-            <input type="text" className=" outline-none bg-gray-200 text-black text-[18px] " placeholder="Search" />
+            <input
+              type="text"
+              className=" outline-none bg-gray-200 text-black text-[18px] "
+              placeholder="Search"
+            />
           </div>
         </form>
       </div>

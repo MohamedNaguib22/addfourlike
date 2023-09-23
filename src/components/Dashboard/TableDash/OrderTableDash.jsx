@@ -2,10 +2,10 @@ import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 
 export const OrderTableDash = () => {
-  const [click,setClick]=useState(false)
-  const [clickTwo,setClickTwo]=useState(false)
+  const [click, setClick] = useState(false);
+  const [clickTwo, setClickTwo] = useState(false);
   function Click() {
-    setClick(!click)
+    setClick(!click);
   }
   function ClickTwo() {
     setClickTwo(!clickTwo);
@@ -17,7 +17,7 @@ export const OrderTableDash = () => {
           <div className="px-6  py-3 text-blue-500 ml-[35px]">
             <div className="flex justify-center items-center mx-auto">
               <span>All</span>
-              <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
+              <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
                 3
               </span>
             </div>
@@ -25,7 +25,7 @@ export const OrderTableDash = () => {
           <div className="px-6 text-center py-3">
             <div className="flex justify-center items-center mx-auto">
               <span>Complete</span>
-              <span className="text-[12px] font-medium bg-gray-100  w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+              <span className="text-[12px] font-medium bg-gray-100 px-[10px] w-auto h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 1
               </span>
             </div>
@@ -33,7 +33,7 @@ export const OrderTableDash = () => {
           <div className="px-6 text-center py-3">
             <button className="flex justify-center items-center mx-auto">
               <span>Pending</span>
-              <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+              <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 2
               </span>
             </button>
@@ -45,35 +45,27 @@ export const OrderTableDash = () => {
           <tr>
             <th scope="col" className="px-6 text-center py-3 ">
               id
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               User Name
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               Type
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               Link
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               Amount
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               Status
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               Data
-              
             </th>
             <th scope="col" className="px-6 text-center py-3">
               Action
-              
             </th>
           </tr>
         </thead>

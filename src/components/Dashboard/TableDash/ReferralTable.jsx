@@ -8,7 +8,7 @@ export const ReferralTable = () => {
           <div className="px-6  py-3 text-blue-500 ">
             <div className="flex justify-center items-center mx-auto">
               <span>All</span>
-              <span className="text-[12px] font-medium bg-gray-100 w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
+              <span className="text-[12px] font-medium bg-gray-100  w-auto px-[10px] h-[25px] flex justify-center items-center rounded-md ml-[6px]">
                 3
               </span>
             </div>
@@ -16,7 +16,7 @@ export const ReferralTable = () => {
           <div className="px-6 text-center py-3">
             <div className="flex justify-center items-center ">
               <span>Top</span>
-              <span className="text-[12px] font-medium bg-gray-100  w-[25px] h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+              <span className="text-[12px] font-medium bg-gray-100 px-[10px] w-auto h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 25
               </span>
             </div>
@@ -56,9 +56,7 @@ export const ReferralTable = () => {
             </th>
             <td className="px-6 text-center py-4">Kareem</td>
             <td className="px-6 text-center py-4">10</td>
-            <td className="px-6 text-center py-4 ">
-            2500
-            </td>
+            <td className="px-6 text-center py-4 ">2500</td>
             <td className="px-6 text-center py-4">3 Oct , 2023</td>
             <td className="py-6 text-center px-6">
               <button
@@ -79,9 +77,7 @@ export const ReferralTable = () => {
             </th>
             <td className="px-6 text-center py-4">Mohamed</td>
             <td className="px-6 text-center py-4">5</td>
-            <td className="px-6 text-center py-4 ">
-            1250
-            </td>
+            <td className="px-6 text-center py-4 ">1250</td>
             <td className="px-6 text-center py-4">3 Oct , 2023</td>
             <td className="py-6 text-center px-6">
               <button

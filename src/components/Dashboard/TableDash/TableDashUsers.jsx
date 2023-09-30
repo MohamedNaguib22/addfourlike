@@ -17,7 +17,7 @@ export const TableDashUsers = () => {
           <div className="px-6 text-center py-3">
             <button className="flex justify-center items-center mx-auto">
               <span>Ban</span>
-              <span className="text-[12px] font-medium bg-gray-100  w-auto h-[25px] flex justify-center items-center rounded-md ml-[10px]">
+              <span className="text-[12px] font-medium bg-gray-100 px-[10px] w-auto h-[25px] flex justify-center items-center rounded-md ml-[10px]">
                 1
               </span>
             </button>

@@ -28,6 +28,11 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li>
+            <Link to="/website" className="uppercase">
+              Website
+            </Link>
+          </li>
+          <li>
             <HashLink smooth to="/#about" className="uppercase">
               about us
             </HashLink>

@@ -4,6 +4,7 @@ import { Login } from "./Login";
 import { Signup } from "./Signup";
 import { FormContext } from "../../Context/ContextForm";
 import { ForgotPassword } from "./ForgotPassword";
+import { RestPassword } from "./RestPassword";
 
 export const Forms = () => {
   const contextPop = useContext(PopUp);
@@ -21,11 +22,11 @@ export const Forms = () => {
           <Signup />
         ) : stateContext === "login" ? (
           <Login />
-        ) : (
-          stateContext === "forgot" && (
-            <ForgotPassword />
-          )
-        )}
+        ) : stateContext === "forgot" ? (
+          <ForgotPassword />
+        ) : stateContext === "rest" ? (
+          <RestPassword />
+        ) : null}
       </div>
     </>
   );

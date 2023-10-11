@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { FaPlus, FaUser } from "react-icons/fa";
 import { FormContext } from "../../Context/ContextForm";
 import { PopUp } from "../../Context/Context";
-
+import axios from "axios"
 export const Signup = () => {
   // UseContext
   const contextPop = useContext(PopUp);
@@ -12,9 +12,9 @@ export const Signup = () => {
   // State API
   const [form, setForm] = useState({
     email: "",
-    name: "",
+    user_name: "",
     password: "",
-    passwordConfirm: "",
+    cPass: "",
   });
   // Function OnChange
   function handelChange(e) {
@@ -22,8 +22,18 @@ export const Signup = () => {
   }
 
   // Function API
-  function Submit(e) {
+  async function Submit(e) {
     e.preventDefault();
+    try {
+      const res = await axios.post(
+        "https://add-likes.onrender.com/add4like/api/v1/auth/signup",
+        form
+      );
+      console.log(res);
+    } 
+    catch (err){
+      console.log(err);
+    }
   }
   return (
     <div className="lg:w-[40%] xl:w-[30%] w-full FormsLogin md:w-[65%] bg-[#00000057] px-[30px] py-[50px] rounded-md absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%]">
@@ -46,8 +56,8 @@ export const Signup = () => {
         <div className="relative z-0 w-full mb-6 group">
           <input
             type="text"
-            name="name"
-            value={form.name}
+            name="user_name"
+            value={form.user_name}
             onChange={handelChange}
             id="floating_user"
             className="block  py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:border-gray-600 peer"
@@ -100,8 +110,8 @@ export const Signup = () => {
         <div className="relative z-0 w-full mb-6 group ">
           <input
             type="password"
-            name="passwordConfirm"
-            value={form.passwordConfirm}
+            name="cPass"
+            value={form.cPass}
             onChange={handelChange}
             id="floating_password"
             className="block  py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:border-gray-600 peer"

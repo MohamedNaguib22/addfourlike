@@ -4,12 +4,34 @@ import { FaBars, FaUser } from "react-icons/fa";
 import { UserIcon } from "@heroicons/react/solid";
 import { useContext, useState } from "react";
 import { SideNav } from "../../Context/ContextSide";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import Cookies from "universal-cookie";
 export const TopNav = () => {
   const Side = useContext(SideNav);
+  // Cookie
+  const Cookie = new Cookies();
+  const navigate = useNavigate();
+  const token = Cookie.get("addLike")
   const FunctionSide = Side.SideShow;
   const [mobileNav, setMobileNav] = useState(false);
   function handleMobile() {
     setMobileNav(!mobileNav);
+  }
+  async function LogOut(e) {
+    e.preventDefault();
+    try {
+      const res = await axios.post(
+        "https://add-likes.onrender.com/add4like/api/v1/auth/logout",
+        null,
+        { headers: { Authorization: "add__" + token } }
+      );
+      console.log(res);
+      navigate("/")
+      Cookie.remove("addLike")
+    } catch (err) {
+      console.log(err);
+    }
   }
   return (
     <div className="fixed z-[999] top-0 w-full shadow-md bg-gray-700 px-[28px] h-[90px] flex justify-between items-center">
@@ -33,9 +55,12 @@ export const TopNav = () => {
           </h1>
           <h1>0 Points</h1>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-3">
           <h1 className="text-white font-bold text-[25px]">@Kareem</h1>
           <FaUser size={40} />
+          <button className="text-white" onClick={LogOut}>
+            Log Out
+          </button>
         </div>
       </div>
       {/* TopNav */}
@@ -53,6 +78,9 @@ export const TopNav = () => {
       <div className="hidden lg:flex items-center gap-4">
         <h1 className="text-white font-bold text-[28px]">@Kareem</h1>
         <FaUser size={40} />
+        <button className="text-white" onClick={LogOut}>
+          Log Out
+        </button>
       </div>
       <div className="block lg:hidden" onClick={handleMobile}>
         <button className="border-2 border-white rounded-full p-[5px] text-white">

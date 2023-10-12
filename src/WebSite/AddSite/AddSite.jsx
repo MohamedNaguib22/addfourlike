@@ -1,5 +1,6 @@
+
+
 import { useState } from "react";
-import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 
 export const AddSite = () => {
@@ -17,14 +18,11 @@ export const AddSite = () => {
   }
   return (
     <div>
-      <HeaderOne>
-        <div className="flex lg:items-center text-[14px] lg:text-[16px] gap-2">
-          <p>$</p>
-          <h1>By buying points with AMF Tokens, you get 50% More</h1>
-        </div>
-      </HeaderOne>
       <HeaderTwo>
-        <h1 className="text-[20px] lg:text-[26px] font-medium">Add / Edit Content</h1>
+        <h1 className="text-[20px] lg:text-[26px] font-medium">
+          Add / Edit Content
+        </h1>
+        <p>[... Here you can add or edit your content ...]</p>
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center mb-[40px]">
         <form className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
@@ -55,16 +53,19 @@ export const AddSite = () => {
             />
           </div>
           {/* FB Post */}
-          <div className="flex gap-1 items-center mb-[16px]">
-            <label className="w-[120px] text-right" htmlFor="FB post url">
-              FB post url:
-            </label>
-            <input
-              type="text"
-              className="lg:w-[350px] py-[8px] rounded-lg w-full"
-              required
-              minLength={2}
-            />
+          <div className="flex flex-col">
+            <div className="flex gap-1 items-center mb-[16px]">
+              <label className="w-[120px] text-right" htmlFor="FB post url">
+                FB post url:
+              </label>
+              <input
+                type="text"
+                className="lg:w-[350px] py-[8px] rounded-lg w-full"
+                required
+                minLength={2}
+              />
+            </div>
+            <p className="text-[12px] mx-auto mt-[-10px] mb-[8px]">Example : https://www.facebook.com/@username/</p>
           </div>
           {/* Countries */}
           <div className="flex gap-1 items-center mb-[16px] ml-[-15px] lg:ml-0 ">
@@ -118,7 +119,7 @@ export const AddSite = () => {
               <p className="pl-[10px] text-[14px] sm:text-[16px] ">on</p>
               <p className="pr-[10px] text-[14px] sm:text-[16px] ">off</p>
               <div
-                className={`absolute text-[14px] sm:text-[16px] top-0 bg-black text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
+                className={`absolute text-[14px] sm:text-[16px] top-0 bg-[#55585a] text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
                   switchBtn ? "left-0" : "right-0"
                 }`}
               >
@@ -153,7 +154,7 @@ export const AddSite = () => {
               <p className="pl-[10px] text-[14px] sm:text-[16px] ">on</p>
               <p className="pr-[10px] text-[14px] sm:text-[16px] ">off</p>
               <div
-                className={`absolute top-0 text-[14px] sm:text-[16px]  bg-black text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
+                className={`absolute top-0 text-[14px] sm:text-[16px]  bg-[#55585a] text-white w-[50%] z-[1] h-full rounded-md flex justify-center items-center ${
                   switchBtnTwo ? "left-0" : "right-0"
                 }`}
               >
@@ -176,27 +177,19 @@ export const AddSite = () => {
                 minLength={2}
               />
             </div>
-            <p className="text-[12px] font-normal w-[20%]">
-              Cost/Points Per Click (from 5 to 50)
-            </p>
+            <p className="text-[12px] font-normal w-[20%]">Points Per Click</p>
           </div>
-          <div className="grid lg:grid-cols-2 grid-cols-1 w-[50%] mx-auto lg:w-[200px]">
-            <button className="text-white bg-black ml-0 lg:ml-[-30px] h-[45px] rounded-lg">
-              Save Change
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-[8px] w-[50%] mx-auto lg:w-[200px]">
+            <button className="text-white bg-[#007BFF99] ml-0 lg:ml-[-30px] h-[45px] rounded-lg">
+              Save
             </button>
-            <button className="text-black underline">Cancel</button>
+            <button className="text-black underline bg-[#FF202099] rounded-lg">
+              Cancel
+            </button>
           </div>
         </form>
       </div>
-      <HeaderOne>
-        <h1 className="w-[98%] lg:w-[60%] lg:text-[16px] text-[14px] text-center font-normal py-[20px]">
-          The higher the CPC of your site/page, the more likely you are to get
-          it seen, which means that the rate of getting likes/followers will be
-          high. You can add an unlimited number of sites/pages. Please read our
-          Terms carefully again so you don`t post content that is prohibited
-          here.
-        </h1>
-      </HeaderOne>
     </div>
   );
 };
+

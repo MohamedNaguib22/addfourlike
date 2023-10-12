@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-/* eslint-disable react/no-unescaped-entities */
-export const OrderTable = () => {
+export const TableService = () => {
   return (
     <div className="relative mt-[8px] container overflow-x-auto mb-[28px] sm:rounded-lg">
       <table className="w-full text-sm text-left text-black ">
@@ -14,16 +13,19 @@ export const OrderTable = () => {
               Service
             </th>
             <th scope="col" className="px-6 py-3">
-              Link
+              Rate per 1000
             </th>
             <th scope="col" className="px-6 py-3">
-              Charge
+              Min order
             </th>
             <th scope="col" className="px-6 py-3">
-              Status
+              Max order
             </th>
             <th scope="col" className="px-6 py-3">
-              Details
+              Average time
+            </th>
+            <th scope="col" className="px-6 py-3">
+              Description
             </th>
           </tr>
         </thead>
@@ -36,18 +38,18 @@ export const OrderTable = () => {
               1
             </th>
             <td className="px-6 py-4 min-w-[310px] max-w-[650px]">
-              Instagram Followers - [ REAL ] [from india] - [Users From We
-              GetFollowerApp] - [Low Drop]
+              Facebook Fake Like
             </td>
             <td className="px-6 py-4">$2.00</td>
             <td className="px-6 py-4">10</td>
             <td className="px-6 py-4">200000</td>
+            <td className="px-6 py-4">33 hours 27 minutes</td>
             <td className="py-4 px-6">
               <Link
                 className="bg-blue-400 text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
-                Details
+                View
               </Link>
             </td>
           </tr>
@@ -55,4 +57,4 @@ export const OrderTable = () => {
       </table>
     </div>
   );
-};
+}

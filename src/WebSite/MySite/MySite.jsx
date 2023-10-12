@@ -1,17 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
+
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 import SiteTable from "../../components/SiteTable/SiteTable";
 
 export const MySite = () => {
   return (
     <div>
-      <HeaderOne>
-        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
-          <p>$</p>
-          <h1>By buying points with AMF Tokens, you get 50% More</h1>
-        </div>
-      </HeaderOne>
       <HeaderTwo>
         <h1 className="text-[20px] lg:text-[26px]">My Site</h1>
       </HeaderTwo>
@@ -21,7 +15,7 @@ export const MySite = () => {
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-[34px] mt-[20px]">
-        <div className="text-white bg-black w-[80px] font-medium rounded-md h-[40px] flex justify-center items-center">
+        <div className="text-white bg-[#007BFF99] w-[80px] font-medium rounded-md h-[40px] flex justify-center items-center">
           <span className="mr-[10px]">+</span> Add
         </div>
         <div className="text-center text-[16px] font-medium lg:w-[50%]">
@@ -47,7 +41,7 @@ export const MySite = () => {
             from AddMeFast because of added content.
           </h1>
         </div>
-        <div className="text-white bg-black w-[80px] font-medium rounded-md h-[40px] flex justify-center items-center">
+        <div className="text-white bg-[#007BFF99] w-[80px] font-medium rounded-md h-[40px] flex justify-center items-center">
           <span className="mr-[10px]">+</span> Add
         </div>
       </div>

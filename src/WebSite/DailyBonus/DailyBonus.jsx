@@ -1,33 +1,50 @@
 /* eslint-disable react/no-unescaped-entities */
-import { AiOutlineWarning } from "react-icons/ai";
-import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
+import { useState } from "react";
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
-import Logo from '../../../public/Assets/img/daily_bonus.webp'
+import { useEffect } from "react";
 export const DailyBonus = () => {
+  const [time, setTime] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(time + 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [time]);
+
+  const hours = Math.floor(time / 3600);
+  const minutes = Math.floor((time % 3600) / 60);
+  const seconds = time % 60;
+
   return (
     <div>
-      <HeaderOne>
-        <div className="flex items-center gap-2">
-          <AiOutlineWarning />
-          <h1 className="text-[14px] font-medium">
-            Please be careful and read our Terms again. Anyone who violates any
-            of our terms and conditions will be permanently banned without the
-            possibility of being unblocked.
-          </h1>
-        </div>
-      </HeaderOne>
       <HeaderTwo>
-        <h1 className="text-[28px] font-[400]">Daily Bonus</h1>
-        <p className="text-[13px] pb-[10px] font-normal lg:w-[32%]">
-          Get daily
-          <span className="text-black text-[22px] font-bold">
-            200 and more bonus points
-          </span>{" "}
-          (Only daily active users can get bonuses)
+        <h1 className="text-[18px] font-medium">Daily Bonus</h1>
+        <p className=" pb-[10px] font-medium lg:w-[32%]">
+          [... Be Active To Get More Bonus Points ...]
         </p>
       </HeaderTwo>
+      <div>
+        <div className="text-4xl text-center text-white  mb-4">
+          <div className="flex justify-center gap-[10px] w-[200px] mx-auto pb-[10px] rounded-lg bg-black">
+            <div>
+              <p className="text-[16px] font-medium mb-[-10px]">Hrs</p>
+              {String(hours).padStart(2, "0")}
+            </div>
+            <div>
+              <p className="text-[16px] font-medium mb-[-10px]">Min</p>
+              {String(minutes).padStart(2, "0")}
+            </div>
+            <div>
+              <p className="text-[16px] font-medium mb-[-10px]">Sec</p>
+              {String(seconds).padStart(2, "0")}
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="flex flex-col justify-center items-center gap-[26px]">
-        <h1 className="text-gray-600 text-center text-[18px] font-bold">
+        <h1 className="text-red-400 text-center text-[18px] font-bold">
           There are no clicks yet for today. Get FREE points in order to be able
           to get unlimited Daily Bonus Points.
         </h1>
@@ -43,9 +60,6 @@ export const DailyBonus = () => {
           00:00 CET, then Your daily ranking and daily clicks sum will be
           reseted, and You need to start over.
         </p>
-        <div>
-          <img src={Logo} alt="image" />
-        </div>
       </div>
     </div>
   );

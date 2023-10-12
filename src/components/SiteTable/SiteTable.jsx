@@ -55,7 +55,7 @@ const SiteTable = () => {
             <td className="px-6 py-4">||</td>
             <td className="px-6 py-4">1</td>
             <td className="px-6 py-4">
-              <FaFacebookSquare size={40} />
+              <FaFacebookSquare size={40} className="text-[#007BFF99]" />
             </td>
             <td className="px-6 py-4">
               <FaInfinity />
@@ -64,7 +64,7 @@ const SiteTable = () => {
             <td className="px-6 py-4">1</td>
             <td className="px-6 py-4">0</td>
             <td className="px-6 py-4 flex items-center cursor-pointer gap-3">
-              <AiFillPlayCircle size={30} className="mt-[4px]" />
+              <AiFillPlayCircle size={30} className="mt-[4px] text-[#007BFF99]" />
               <FaEdit size={27} />
             </td>
             <td className="px-6 py-4">
@@ -72,7 +72,7 @@ const SiteTable = () => {
             </td>
             <td className="py-4 px-6">
               <Link
-                className="bg-black text-white w-[200px] py-[8px] rounded-lg px-[20px] "
+                className="bg-[#007BFF99] text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
                 Details

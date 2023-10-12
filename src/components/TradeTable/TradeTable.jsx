@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-
+import Logo from "../../../public/Assets/img/man.png"
 export const TradeTable = () => {
   return (
     <div className="relative mt-[8px] container overflow-x-auto mb-[28px] sm:rounded-lg">
@@ -60,8 +60,13 @@ export const TradeTable = () => {
             >
               1
             </th>
-            <td className="px-6 py-2">
-              Mohamed <br /> <span className="text-[12px]">@mohamed</span>
+            <td className="px-6 py-2 flex gap-2 items-center">
+              <div>
+                <img className="w-[40px]" src={Logo} alt="" />
+              </div>
+              <div>
+                Mohamed <br /> <span className="text-[12px]">@mohamed</span>
+              </div>
             </td>
             <td className="px-6 py-2">17 min</td>
             <td className="px-6 py-2">40,000</td>
@@ -75,7 +80,7 @@ export const TradeTable = () => {
             <td className="px-6 py-2">125</td>
             <td className="py-2 px-6">
               <Link
-                className="bg-black text-white w-[200px] py-[8px] rounded-lg px-[20px] "
+                className="bg-[#007BFF99] text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
                 Get
@@ -89,8 +94,13 @@ export const TradeTable = () => {
             >
               1
             </th>
-            <td className="px-6 py-2">
-              Kareem <br /> <span className="text-[12px]">@kareem</span>
+            <td className="px-6 py-2 flex gap-2 items-center">
+              <div>
+                <img className="w-[40px]" src={Logo} alt="" />
+              </div>
+              <div>
+                Kareem <br /> <span className="text-[12px]">@Kareem</span>
+              </div>
             </td>
             <td className="px-6 py-2">22 min</td>
             <td className="px-6 py-2">50,000</td>
@@ -104,7 +114,7 @@ export const TradeTable = () => {
             <td className="px-6 py-2">25</td>
             <td className="py-2 px-6">
               <Link
-                className="bg-black text-white w-[200px] py-[8px] rounded-lg px-[20px] "
+                className="bg-[#007BFF99] text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
                 Get

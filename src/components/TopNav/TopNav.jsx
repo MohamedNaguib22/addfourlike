@@ -1,22 +1,25 @@
 import { Link } from "react-router-dom";
 import logo from "../../../public/Assets/img/logo.png";
+import man from "../../../public/Assets/img/man.png";
 import { FaBars, FaUser } from "react-icons/fa";
 import { UserIcon } from "@heroicons/react/solid";
 import { useContext, useState } from "react";
 import { SideNav } from "../../Context/ContextSide";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Cookies from "universal-cookie";
 export const TopNav = () => {
   const Side = useContext(SideNav);
   // Cookie
   const Cookie = new Cookies();
-  const navigate = useNavigate();
-  const token = Cookie.get("addLike")
+  const token = Cookie.get("addLike");
   const FunctionSide = Side.SideShow;
   const [mobileNav, setMobileNav] = useState(false);
+  const [dropDown, setdropDown] = useState(false);
   function handleMobile() {
     setMobileNav(!mobileNav);
+  }
+  function handelDropDown() {
+    setdropDown(!dropDown);
   }
   async function LogOut(e) {
     e.preventDefault();
@@ -27,14 +30,14 @@ export const TopNav = () => {
         { headers: { Authorization: "add__" + token } }
       );
       console.log(res);
-      navigate("/")
-      Cookie.remove("addLike")
+      window.location.pathname="/";
+      Cookie.remove("addLike");
     } catch (err) {
       console.log(err);
     }
   }
   return (
-    <div className="fixed z-[999] top-0 w-full shadow-md bg-gray-700 px-[28px] h-[90px] flex justify-between items-center">
+    <div className="fixed z-[999] top-0 w-full shadow-md bg-[#343A40] px-[28px] h-[70px] flex justify-between items-center">
       <div className="block lg:hidden">
         <button
           onClick={FunctionSide}
@@ -75,12 +78,45 @@ export const TopNav = () => {
         </h1>
         <h1>0 Points</h1>
       </div>
-      <div className="hidden lg:flex items-center gap-4">
+      <div
+        onClick={handelDropDown}
+        className="hidden lg:flex items-center gap-4 relative cursor-pointer"
+      >
         <h1 className="text-white font-bold text-[28px]">@Kareem</h1>
         <FaUser size={40} />
-        <button className="text-white" onClick={LogOut}>
-          Log Out
-        </button>
+        <ul
+          className={`absolute shadow-md bg-[#E9EBEE] w-[250px] top-[56px] left-[-80px] py-[10px] px-[20px] flex flex-col gap-[8px] ${
+            dropDown ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex items-center gap-[10px]">
+            <div>
+              <img
+                className="w-[60px] h-[60px] rounded-full"
+                src={man}
+                alt="Logo"
+              />
+            </div>
+            <div>
+              <p className="text-[18px] font-medium">@Kareem</p>
+            </div>
+          </li>
+          <li className="flex items-center gap-3 border-b-[1px] border-b-black">
+            <span className="font-medium">Status:</span> <FaUser />
+            <span className="font-medium">Normal</span>
+          </li>
+          <li>
+            <p className="font-medium">My Profile</p>
+          </li>
+          <li>
+            <p className="font-medium">My Referrals</p>
+          </li>
+          <li>
+            <button className="font-medium" onClick={LogOut}>
+              Log Out
+            </button>
+          </li>
+        </ul>
       </div>
       <div className="block lg:hidden" onClick={handleMobile}>
         <button className="border-2 border-white rounded-full p-[5px] text-white">

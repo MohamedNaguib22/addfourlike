@@ -4,32 +4,28 @@ import {
   LinkFacebook,
 } from "../../components/FaceBookParent/FaceBookParent";
 import { Facebook } from "../../components/Facebook/Facebook";
-import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
+
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
 
 export const FBShare = () => {
   return (
     <div>
-      <HeaderOne>
-        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
-          <h1>
-            📢 Join the affiliate program and earn a lifetime 5% of the points
-            collected in the "FREE Points" section.
-          </h1>
-        </div>
-      </HeaderOne>
       <HeaderTwo>
-        <h1>Facebook Share</h1>
+        <h1 className="text-[20px] font-medium">FB Share</h1>
+        <p className="text-[16px] font-medium">
+          [... Get FREE Points by Share Posts ...]
+        </p>
       </HeaderTwo>
       <div className="text-[18px] text-center mb-[16px] font-bold">
         <p>You will get 4 points for sharing.</p>
       </div>
       <Facebook Btn="Share" />
       <FaceBookParent>
-        <p className="w-[98%] lg:w-[60%] mx-auto mb-[16px]">
-          To get free points by sharing other's WebSites click on the "Share"
-          button, then the page will be opened with popUp and after sharing the
-          website the popUp will be closed automatically.
+        <p className="lg:w-[60%] text-[16px] mx-auto mb-[16px] font-medium">
+          To Get Free Points by Liking other users' Facebook pages, <br />
+          click the "Like" button, then the page will open with a pop-up window,
+          and after Like the Post, <br />
+          CLOSE the pop-up window yourself and click "Confirm" button.
         </p>
         <LinkFacebook>Get Facebook Shares for website/links</LinkFacebook>
       </FaceBookParent>

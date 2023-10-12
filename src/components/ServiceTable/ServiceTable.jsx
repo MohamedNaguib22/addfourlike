@@ -38,8 +38,7 @@ export const ServiceTable = () => {
               1
             </th>
             <td className="px-6 py-4 min-w-[310px] max-w-[650px]">
-              Instagram Followers - [ REAL ] [from india] - [Users From We
-              GetFollowerApp] - [Low Drop]
+              Facebook Real Like
             </td>
             <td className="px-6 py-4">$2.00</td>
             <td className="px-6 py-4">10</td>
@@ -47,7 +46,7 @@ export const ServiceTable = () => {
             <td className="px-6 py-4">33 hours 27 minutes</td>
             <td className="py-4 px-6">
               <Link
-                className="bg-black text-white w-[200px] py-[8px] rounded-lg px-[20px] "
+                className="bg-blue-400 text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
                 View

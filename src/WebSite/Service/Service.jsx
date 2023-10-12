@@ -1,29 +1,30 @@
-import { HeaderOne } from "../../components/HeaderWebsite/HeaderOne";
-import { Tasks } from "../../components/P2PTasks/Tasks";
+import { FaFacebookF } from "react-icons/fa";
 import { ServiceTable } from "../../components/ServiceTable/ServiceTable";
+import { TableService } from "../../components/TableService";
 
 export const Service = () => {
   return (
     <div>
-      <HeaderOne>
-        <div className="flex items-center gap-2 text-[14px] lg:text-[16px]">
-          <p>$</p>
-          <h1>By buying points with AMF Tokens, you get 50% More</h1>
-        </div>
-      </HeaderOne>
       <div className="container my-[26px] lg:px-[40px]">
-        <h1 className="text-[20px] font-medium lg:text-[28px] lg:font-bold">
-          FaceBook 100% Organic (Quality Services)
-        </h1>
-        <ServiceTable />
+        <div className="flex flex-col mb-[-26px]">
+          <div className="flex gap-2 items-center rounded-md mb-[-7px] bg-[#E1F4FA] px-[12px] py-[8px] font-medium">
+            <FaFacebookF size={20} />
+            <p className="text-[18px]">Facebook Real</p>
+          </div>
+          <div>
+            <ServiceTable />
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <div className="flex gap-2 items-center rounded-md mb-[-7px] bg-[#E1F4FA] px-[12px] py-[8px] font-medium">
+            <FaFacebookF size={20} />
+            <p className="text-[18px]">Facebook Fake</p>
+          </div>
+          <div>
+            <TableService />
+          </div>
+        </div>
       </div>
-      <Tasks />
-      <p className="text-[14px] font-medium text-center">
-        There is no performance to show.
-      </p>
-      <a href="#" className="text-[14px] font-medium text-center block">
-        Click here to get tasks.
-      </a>
     </div>
   );
 };

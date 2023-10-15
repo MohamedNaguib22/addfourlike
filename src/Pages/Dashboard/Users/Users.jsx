@@ -44,8 +44,7 @@ export const Users = () => {
   }
   const showUsers = users.map((item, index) => {
     return (
-      
-        <tr className="bg-white border-b "  >
+        <tr className="bg-white border-b "  key={index} >
           <th
             scope="row"
             className="px-6 py-4 text-center font-medium text-gray-400  whitespace-nowrap "
@@ -89,7 +88,6 @@ export const Users = () => {
             </button>
           </td>
         </tr>
-      </tbody>
     );
   });
   return (
@@ -186,13 +184,15 @@ export const Users = () => {
                 </th>
               </tr>
             </thead>
-            {users.length === 0 ? (
-              <tr className="text-center text-[20px]">
-                Loading Users...........
-              </tr>
-            ) : (
-              showUsers
-            )}
+            <tbody className="Text-Paragraph">
+              {users.length === 0 ? (
+                <tr className="text-center text-[20px]">
+                  Loading Users...........
+                </tr>
+              ) : (
+                showUsers
+              )}
+            </tbody>
           </table>
         </div>
         <div className="flex items-center justify-end pt-[50px]">

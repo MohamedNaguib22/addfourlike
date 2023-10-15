@@ -44,8 +44,8 @@ export const Users = () => {
   }
   const showUsers = users.map((item, index) => {
     return (
-      <tbody className="Text-Paragraph" key={index}>
-        <tr className="bg-white border-b ">
+      
+        <tr className="bg-white border-b "  >
           <th
             scope="row"
             className="px-6 py-4 text-center font-medium text-gray-400  whitespace-nowrap "

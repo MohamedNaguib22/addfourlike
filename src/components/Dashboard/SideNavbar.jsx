@@ -13,15 +13,44 @@ import "./Navs.css";
 import { NavLink } from "react-router-dom";
 import { CiDollar, CiSettings } from "react-icons/ci";
 import { TbPlayerTrackNext } from "react-icons/tb";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Cookies from "universal-cookie";
+import axios from "axios";
 export const SideNavbar = () => {
   const [arrow, setArrow] = useState("");
   function Arrow(click) {
     setArrow(click);
   }
+    const [admin, setAdmin] = useState("");
+    const cookie = new Cookies();
+    const token = cookie.get("addLike");
+    useEffect(() => {
+      axios
+        .get("https://add-likes.onrender.com/add4like/api/v1/auth/user", {
+          headers: {
+            Authorization: "add__" + token,
+          },
+        })
+        .then((res) => {
+          setAdmin(res.data.user.role);
+        })
+    }, [token]);
   return (
-    <div className="w-[320px] py-[36px] pl-[20px] bg-gray-100">
+    <div className="w-[20%] z-[222] h-screen mt-[80px] fixed py-[36px] pl-[20px] bg-gray-100">
       <ul className="flex flex-col gap-[12px]">
+        {admin === "Moderator" || admin === "Admin" ? (
+          <li onClick={() => Arrow("Website")}>
+            <NavLink
+              to="/website"
+              className="flex items-center gap-2 LinkFirst hover:bg-white duration-300 transition-all"
+            >
+              <div className="bg-sky-400 py-[4px] px-[10px] rounded-lg">
+                <FaHome className="text-white" size={21} />
+              </div>
+              <p className=" font-medium">WebSite</p>
+            </NavLink>
+          </li>
+        ) : null}
         <li onClick={() => Arrow("Dashboard")}>
           <NavLink
             to="/dashboard"

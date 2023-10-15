@@ -14,12 +14,12 @@ export const TopNav = () => {
   const token = Cookie.get("addLike");
   const FunctionSide = Side.SideShow;
   const [mobileNav, setMobileNav] = useState(false);
-  const [dropDown, setdropDown] = useState(false);
+  const [dropDown, setDropDown] = useState(false);
   function handleMobile() {
     setMobileNav(!mobileNav);
   }
   function handelDropDown() {
-    setdropDown(!dropDown);
+    setDropDown(!dropDown);
   }
   async function LogOut(e) {
     e.preventDefault();
@@ -49,7 +49,7 @@ export const TopNav = () => {
       {/* Mobile */}
       <div
         className={`absolute lg:opacity-0 lg:invisible visible opacity-[1] bg-gray-700 transition-all duration-[0.3s]  w-full left-0 flex justify-between px-[30px] h-[160px] ${
-          mobileNav ? "top-[100%]" : "top-[-200%]"
+          mobileNav ? "top-[100%]" : "top-[-300%]"
         }`}
       >
         <div className="text-white font-bold text-[24px] flex gap-[20px] items-center ">

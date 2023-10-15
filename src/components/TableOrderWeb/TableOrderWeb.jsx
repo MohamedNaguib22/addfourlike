@@ -1,67 +1,55 @@
-import { useState } from "react";
-import { FaAngleDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const TableOrderWeb = () => {
-  const [click, setClick] = useState(false);
-  function Click() {
-    setClick(!click);
-  }
+
 
   return (
-    <div>
-      <table className="w-full md:w-[20%] mx-auto text-sm text-left text-black ">
-        <thead className="Text-Paragraph text-gray-700 uppercase bg-gray-50 ">
+    <div className="relative mt-[8px] container overflow-x-auto mb-[28px] sm:rounded-lg">
+      <table className="w-full text-sm text-left text-black ">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50">
           <tr>
-            <th scope="col" className="px-6 text-center py-3 ">
-              id
+            <th scope="col" className="px-6 py-3">
+              ID
             </th>
-            <th scope="col" className="px-6 text-center py-3">
+            <th scope="col" className="px-6 py-3">
               Service
             </th>
-            <th scope="col" className="px-6 text-center py-3">
+            <th scope="col" className="px-6 py-3">
               Link
             </th>
-            <th scope="col" className="px-6 text-center py-3">
+            <th scope="col" className="px-6 py-3">
               Status
             </th>
-            <th scope="col" className="px-6 text-center py-3">
-              Remains
+            <th scope="col" className="px-6 py-3">
+              Status
             </th>
-            <th scope="col" className="px-6 text-center py-3">
-              Action
+            <th scope="col" className="px-6 py-3">
+              Details
             </th>
           </tr>
         </thead>
-        <tbody className="Text-Paragraph">
+        <tbody>
           <tr className="bg-white border-b ">
             <th
               scope="row"
-              className="px-6 py-4 text-center font-medium text-gray-400  whitespace-nowrap "
+              className="px-6 py-4 font-medium  whitespace-nowrap "
             >
               1
             </th>
-            <td className="px-6 text-center py-4">3 Oct , 2023</td>
-            <td className="px-6 text-center py-4">Kareem</td>
-            <td className="px-6 text-center py-4 text-red-400">Pending</td>
-            <td className="px-6 text-center py-4">250</td>
-            <td className="py-6 text-center px-6">
-              <button
-                onClick={Click}
-                className="bg-[#007BFF99] text-black w-[100px] py-[8px] rounded-lg relative"
+            <td className="px-6 py-4 min-w-[310px] max-w-[650px]">
+              Instagram Followers - [ REAL ] [from india] - [Users From We
+              GetFollowerApp] - [Low Drop]
+            </td>
+            <td className="px-6 py-4">$2.00</td>
+            <td className="px-6 py-4">10</td>
+            <td className="px-6 py-4">200000</td>
+            <td className="py-4 px-6">
+              <Link
+                className="bg-blue-400 text-white w-[200px] py-[8px] rounded-lg px-[20px] "
                 to="/#"
               >
-                Action
-                <FaAngleDown size={18} className="inline ml-[12px]" />
-                <ul
-                  className={`absolute bg-gray-300 w-full flex flex-col justify-start z-[222] items-start px-[4px] py-[12px] gap-[12px] rounded-md top-[35px] ${
-                    click ? "opacity-[1] visible" : "invisible opacity-0"
-                  }`}
-                >
-                  <li>Waite</li>
-                  <li>Complete</li>
-                  <li>Cancel</li>
-                </ul>
-              </button>
+                Details
+              </Link>
             </td>
           </tr>
         </tbody>

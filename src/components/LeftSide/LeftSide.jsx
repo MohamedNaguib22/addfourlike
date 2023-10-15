@@ -1,7 +1,7 @@
 import { FaBars, FaPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SideNav } from "../../Context/ContextSide";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import Logo from "../../../public/Assets/img/My Order.png";
 import Logo1 from "../../../public/Assets/img/Wallet.png";
 import Logo2 from "../../../public/Assets/img/P2P Trade.png";
@@ -11,9 +11,25 @@ import youtube from "../../../public/Assets/img/youtube.png";
 import whatsapp from "../../../public/Assets/img/whatsapp.png";
 import facebook from "../../../public/Assets/img/facebook.png";
 import telegram from "../../../public/Assets/img/telegram.png";
+import Cookies from "universal-cookie";
+import axios from "axios";
 export const LeftSide = () => {
   const SideState = useContext(SideNav);
   const State = SideState.Side;
+  const [admin, setAdmin] = useState("");
+  const cookie = new Cookies();
+  const token = cookie.get("addLike");
+  useEffect(() => {
+    axios
+      .get("https://add-likes.onrender.com/add4like/api/v1/auth/user", {
+        headers: {
+          Authorization: "add__" + token,
+        },
+      })
+      .then((res) => {
+        setAdmin(res.data.user.role);
+      });
+  }, [token]);
   return (
     <>
       <div
@@ -22,7 +38,12 @@ export const LeftSide = () => {
         }`}
       >
         <ul className="flex flex-col gap-4 text-[24px] pb-[18px] font-bold pt-[20px] relative px-[10px] before:content-['']  before:absolute before:w-[80%] before:h-[2px] before:bg-gray-400 before:bottom-0 before:left-2/4 before:translate-x-[-50%] ">
-          <li className="flex gap-2 items-center lg:justify-start px-[0] lg:px-[20px] justify-center LinksFonts text-white bg-[#0E87F2CC] w-full h-[43px] rounded-[23px]">
+          {admin === "Moderator" || admin === "Admin" ? (
+            <li className="lg:w-[90%] flex gap-2 items-center lg:justify-start px-[0] lg:px-[20px] justify-center LinksFonts text-white bg-[#0E87F2CC] w-full h-[43px] rounded-[23px]">
+              <FaPlus size={14} /> <Link to="/dashboard">Dashboard</Link>
+            </li>
+          ) : null}
+          <li className="lg:w-[90%] flex gap-2 items-center lg:justify-start px-[0] lg:px-[20px] justify-center LinksFonts text-white bg-[#0E87F2CC] w-full h-[43px] rounded-[23px]">
             <FaPlus size={14} /> <Link to="add-order">Add Order</Link>
           </li>
           <li className=" flex gap-2 items-center text-black hover:text-gray-900 cursor-pointer transition-all duration-[0.3s]">
@@ -43,7 +64,7 @@ export const LeftSide = () => {
           </li>
         </ul>
         <ul className="flex flex-col gap-4 py-[20px] text-[24px] font-bold px-[10px] relative before:content-['']  before:absolute before:w-[80%] before:h-[2px] before:bg-gray-400 before:bottom-0 before:left-2/4 before:translate-x-[-50%] ">
-          <li className="flex gap-2 lg:justify-start px-[0] lg:px-[20px] LinksFonts items-center justify-center text-white bg-[#0E87F2CC] h-[43px] rounded-[23px]">
+          <li className="lg:w-[90%] flex gap-2 lg:justify-start px-[0] lg:px-[20px] LinksFonts items-center justify-center text-white bg-[#0E87F2CC] h-[43px] rounded-[23px]">
             <FaPlus size={14} />
             <Link to="add-site">Add Site/Link</Link>
           </li>

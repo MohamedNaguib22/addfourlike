@@ -23,7 +23,7 @@ const Navbar = (props) => {
         </div>
         <ul className={`hidden items-center gap-[85px] lg:flex ${props.color}`}>
           <li>
-            <Link to="/dashboard" className="uppercase">
+            <Link to="/" className="uppercase">
               services
             </Link>
           </li>

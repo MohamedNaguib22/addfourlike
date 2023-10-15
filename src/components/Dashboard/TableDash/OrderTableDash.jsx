@@ -1,7 +1,28 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
-
+import Cookies from "universal-cookie";
 export const OrderTableDash = () => {
+    const Cookie = new Cookies();
+  const token = Cookie.get("addLike");
+  const [order, setOrder] = useState([]);
+    const getUser = async () => {
+      try {
+        await axios
+          .get("https://add-likes.onrender.com/add4like/api/v1/auth/users", {
+            headers: { Authorization: "add__" + token },
+          })
+          .then((res) => {
+            setOrder(res.data.users);
+            console.log(res.data.users);
+          });
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    useEffect(() => {
+      getUser();
+    }, []);
   const [click, setClick] = useState(false);
   const [clickTwo, setClickTwo] = useState(false);
   function Click() {

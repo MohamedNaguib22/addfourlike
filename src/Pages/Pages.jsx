@@ -47,7 +47,7 @@ export const Pages = () => {
   return (
     <div>
       <Forms />
-      <span
+      <div
         className={`${
           ContextPop
             ? "blur-[10px] absolute w-full opacity-[1] visible overflow-hidden"
@@ -102,7 +102,7 @@ export const Pages = () => {
             </Route>
           </Route>
         </Routes>
-      </span>
+      </div>
     </div>
   );
 };

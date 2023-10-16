@@ -3,33 +3,76 @@ import { useEffect, useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 import Cookies from "universal-cookie";
 export const OrderTableDash = () => {
-    const Cookie = new Cookies();
+  const Cookie = new Cookies();
   const token = Cookie.get("addLike");
   const [order, setOrder] = useState([]);
-    const getUser = async () => {
-      try {
-        await axios
-          .get("https://add-likes.onrender.com/add4like/api/v1/auth/users", {
-            headers: { Authorization: "add__" + token },
-          })
-          .then((res) => {
-            setOrder(res.data.users);
-            console.log(res.data.users);
-          });
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    useEffect(() => {
-      getUser();
-    }, []);
-  const [click, setClick] = useState(false);
-  const [clickTwo, setClickTwo] = useState(false);
-  function Click() {
-    setClick(!click);
+  const [clickTwo, setClickTwo] = useState("");
+  console.log(status);
+  const getOrder = async () => {
+    try {
+      axios
+        .get("https://add-likes.onrender.com/add4like/api/v1/orders", {
+          headers: { Authorization: "add__" + token },
+        })
+        .then((res) => {
+          setOrder(res.data.orders);
+          console.log(res.data.orders);
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    getOrder();
+  }, []);
+  function ClickTwo(click) {
+    setClickTwo(click);
+    if (clickTwo === click) {
+      setClickTwo("");
+    } else {
+      setClickTwo(click);
+    }
   }
-  function ClickTwo() {
-    setClickTwo(!clickTwo);
+  async function handelChange(id) {
+    console.log(id);
+    try {
+      let res = await axios.post(
+        `https://add-likes.onrender.com/add4like/api/v1/orders/complete/${id}`,
+        null,
+        { headers: { Authorization: "add__" + token } }
+      );
+      getOrder();
+      console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  async function handelDelete(id) {
+    console.log(id);
+    try {
+      let res = await axios.delete(
+        `https://add-likes.onrender.com/add4like/api/v1/orders/${id}`,
+        { headers: { Authorization: "add__" + token } }
+      );
+      getOrder();
+      console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  async function handelCancel(id) {
+    console.log(id);
+    try {
+      let res = await axios.post(
+        `https://add-likes.onrender.com/add4like/api/v1/orders/cancel/${id}`,
+        null,
+        { headers: { Authorization: "add__" + token } }
+      );
+      getOrder();
+      console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
   }
   return (
     <div className="relative mt-[8px] overflow-x-auto sm:rounded-lg">
@@ -91,76 +134,54 @@ export const OrderTableDash = () => {
           </tr>
         </thead>
         <tbody className="Text-Paragraph">
-          <tr className="bg-white border-b ">
-            <th
-              scope="row"
-              className="px-6 py-4 text-center font-medium text-gray-400  whitespace-nowrap "
-            >
-              1
-            </th>
-            <td className="px-6 text-center py-4">Kareem</td>
-            <td className="px-6 text-center py-4">Facebook Comment</td>
-            <td className="px-6 text-center py-4 ">
-              https://www.facebook.com/Mohamed/
-            </td>
-            <td className="px-6 text-center py-4">1000</td>
-            <td className="px-6 text-center py-4 text-red-400">Pending</td>
-            <td className="px-6 text-center py-4">3 Oct , 2023</td>
-            <td className="py-6 text-center px-6">
-              <button
-                onClick={Click}
-                className="bg-[#007BFF99] text-black w-[100px] py-[8px] rounded-lg relative"
-                to="/#"
-              >
-                Action
-                <FaAngleDown size={18} className="inline ml-[12px]" />
-                <ul
-                  className={`absolute bg-gray-300 w-full flex flex-col justify-start items-start px-[4px] py-[12px] gap-[12px] rounded-md top-[35px] ${
-                    click ? "opacity-[1] visible" : "invisible opacity-0"
+          {order.map((item, index) => {
+            return (
+              <tr key={index} className="bg-white border-b ">
+                <th
+                  scope="row"
+                  className="px-6 py-4 text-center font-medium text-gray-400  whitespace-nowrap "
+                >
+                  {index + 1}
+                </th>
+                <td className="px-6 text-center py-4">Mohamed</td>
+                <td className="px-6 text-center py-4">{item.type}</td>
+                <td className="px-6 text-center py-4 ">{item.link}</td>
+                <td className="px-6 text-center py-4">{item.quantity}</td>
+                <td
+                  className={`px-6 text-center py-4 ${
+                    item.status === "pending"
+                      ? "text-red-400"
+                      : item.status === "completed" && "text-green-400"
                   }`}
                 >
-                  <li>Waite</li>
-                  <li>Complete</li>
-                  <li>Cancel</li>
-                </ul>
-              </button>
-            </td>
-          </tr>
-          <tr className="bg-white border-b ">
-            <th
-              scope="row"
-              className="px-6 py-4 text-center font-medium text-gray-400  whitespace-nowrap "
-            >
-              1
-            </th>
-            <td className="px-6 text-center py-4">Mohamed</td>
-            <td className="px-6 text-center py-4">Facebook Like</td>
-            <td className="px-6 text-center py-4 ">
-              https://www.facebook.com/Kreem.Khaled112/
-            </td>
-            <td className="px-6 text-center py-4">1000</td>
-            <td className="px-6 text-center py-4 text-green-400">Complete</td>
-            <td className="px-6 text-center py-4">3 Oct , 2023</td>
-            <td className="py-6 text-center px-6">
-              <button
-                className="bg-[#007BFF99] text-black w-[100px] py-[8px] rounded-lg relative"
-                to="/#"
-                onClick={ClickTwo}
-              >
-                Action
-                <FaAngleDown size={18} className="inline ml-[12px]" />
-                <ul
-                  className={`absolute bg-gray-300 w-full flex flex-col justify-start items-start px-[4px] py-[12px] gap-[12px] rounded-md top-[35px] ${
-                    clickTwo ? "opacity-[1] visible" : "invisible opacity-0"
-                  }`}
-                >
-                  <li>Waite</li>
-                  <li>Complete</li>
-                  <li>Cancel</li>
-                </ul>
-              </button>
-            </td>
-          </tr>
+                  {item.status}
+                </td>
+                <td className="px-6 text-center py-4">
+                  {item.createdAt.split("T").slice(0, 1).join(" ")}
+                </td>
+                <td className="py-6 text-center px-6">
+                  <button
+                    className="bg-[#007BFF99] text-black w-[100px] py-[8px] rounded-lg relative"
+                    to="/#"
+                    onClick={() => ClickTwo(item._id)}
+                  >
+                    Action
+                    <FaAngleDown size={18} className="inline ml-[12px]" />
+                    {/* drop down */}
+                    <ul
+                      className={`absolute bg-gray-300 w-full z-[999] flex flex-col justify-start items-start px-[4px] py-[12px] gap-[12px] rounded-md top-[35px] ${
+                        clickTwo === item._id ? "block" : "hidden"
+                      }`}
+                    >
+                      <li onClick={() => handelDelete(item._id)}>Delete</li>
+                      <li onClick={() => handelChange(item._id)}>Complete</li>
+                      <li onClick={() => handelCancel(item._id)}>Cancel</li>
+                    </ul>
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

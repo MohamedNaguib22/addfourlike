@@ -27,7 +27,7 @@ export const AdminAuth = () => {
   return token ? (
     user === "" ? (
       <Spinner />
-    ) : admin === "Moderator" || admin === "admin" ? (
+    ) : admin === "Moderator" || admin === "Admin" ? (
       <Outlet />
     ) : (
       <Navigate to={"/"} replace={true} />

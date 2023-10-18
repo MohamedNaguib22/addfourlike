@@ -25,7 +25,6 @@ export const RestPassword = () => {
         { email, newPassword, forgetCode }
       );
       setRes(res)
-      console.log(res);
       setEmail("")
       forgetCode("");
       newPassword("");

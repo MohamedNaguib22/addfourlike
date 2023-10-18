@@ -2,7 +2,9 @@ import { useContext, useState } from "react";
 import { FaPlus, FaUser } from "react-icons/fa";
 import { FormContext } from "../../Context/ContextForm";
 import { PopUp } from "../../Context/Context";
-import axios from "axios"
+import axios from "axios";
+import Swal from "sweetalert2";
+
 export const Signup = () => {
   // UseContext
   const contextPop = useContext(PopUp);
@@ -29,9 +31,11 @@ export const Signup = () => {
         "https://add-likes.onrender.com/add4like/api/v1/auth/signup",
         form
       );
-      console.log(res);
-    } 
-    catch (err){
+      Swal.fire({
+        title: res.data.message,
+      });
+      setForm({ email: "", user_name: "", password: "", cPass: "" });
+    } catch (err) {
       console.log(err);
     }
   }

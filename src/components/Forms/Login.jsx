@@ -96,7 +96,6 @@ export const Login = () => {
         </div>
         <div className="flex justify-center">
           <button
-            to="website"
             type="submit"
             className="text-white flex justify-center items-center bg-[#D9D7D7] border-1 border-[#707070]  font-[400] text-[20px] w-[60%] lg:w-[200px] h-[50px] rounded-[20px] "
           >

@@ -8,11 +8,14 @@ import { PopUp } from "../../Context/Context";
 import { HashLink } from "react-router-hash-link";
 const Navbar = (props) => {
   const [nav, setNav] = useState(false);
+  
   const contextPop = useContext(PopUp);
   const functionModel = contextPop.ModelUp;
   function clickNAv() {
     setNav(!nav);
   }
+
+  
   return (
     <div className={`relative z-[5] ${props.class}`}>
       <div className="flex justify-between items-center container leading-[21.78px] p-[27px] h-[80px] Font font-[400] text-white text-[18px] relative">

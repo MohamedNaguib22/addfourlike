@@ -7,7 +7,6 @@ export const OrderTableDash = () => {
   const token = Cookie.get("addLike");
   const [order, setOrder] = useState([]);
   const [clickTwo, setClickTwo] = useState("");
-  console.log(status);
   const getOrder = async () => {
     try {
       axios

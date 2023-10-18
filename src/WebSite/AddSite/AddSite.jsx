@@ -1,12 +1,23 @@
-
-
 import { useState } from "react";
 import HeaderTwo from "../../components/HeaderWebsite/HeaderTwo";
+import axios from "axios";
+import Cookies from "universal-cookie";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const AddSite = () => {
   const [select, setSelect] = useState(false);
   const [switchBtn, setSwitch] = useState(false);
   const [switchBtnTwo, setSwitchTWo] = useState(false);
+  const [title, setTitle] = useState("");
+  const [type, setType] = useState("");
+  const [link, setLink] = useState("");
+  const [total_clicks, setTotalClicks] = useState("");
+  const [daily_clicks, setDailyClicks] = useState("");
+  const [cost_per_click, setCostPerClick] = useState("");
+  const Cookie = new Cookies();
+  const navigate = useNavigate();
+  const token = Cookie.get("addLike");
   function handelSelect() {
     setSelect(!select);
   }
@@ -15,6 +26,26 @@ export const AddSite = () => {
   }
   function handelSwitchTwo() {
     setSwitchTWo(!switchBtnTwo);
+  }
+  async function Submit(e) {
+    e.preventDefault();
+    try {
+      await axios.post(
+        "https://add-likes.onrender.com/add4like/api/v1/services",
+        {
+          type,
+          title,
+          link,
+          total_clicks,
+          daily_clicks,
+          cost_per_click,
+        },
+        { headers: { Authorization: "add__" + token } }
+      );
+      navigate("/website");
+    } catch (err) {
+      console.log(err);
+    }
   }
   return (
     <div>
@@ -25,7 +56,10 @@ export const AddSite = () => {
         <p>[... Here you can add or edit your content ...]</p>
       </HeaderTwo>
       <div className="flex flex-col justify-center items-center mb-[40px]">
-        <form className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium">
+        <form
+          onSubmit={Submit}
+          className=" w-[80%] lg:w-[600px] mx-auto items-center gap-[30px] text-[18px] font-medium"
+        >
           {/* Type */}
           <div className="flex gap-1 items-center mb-[16px]">
             <label className="w-[120px] text-right" htmlFor="Type">
@@ -34,10 +68,13 @@ export const AddSite = () => {
             <select
               name="Type"
               className="lg:w-[350px] py-[8px] rounded-lg w-full"
+              onChange={(e) => setType(e.target.value)}
+              value={type}
             >
-              <option value="">FB Page Likes/Followers</option>
-              <option value="">Facebook Share</option>
-              <option value="">Facebook Post Like</option>
+              <option value="">Select Type</option>
+              <option value="page_followers">Page Followers</option>
+              <option value="share">Facebook Share</option>
+              <option value="post_likes">Post Likes</option>
             </select>
           </div>
           {/* Title */}
@@ -50,6 +87,8 @@ export const AddSite = () => {
               className="lg:w-[350px] py-[8px] rounded-lg w-full"
               required
               minLength={2}
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
             />
           </div>
           {/* FB Post */}
@@ -63,9 +102,13 @@ export const AddSite = () => {
                 className="lg:w-[350px] py-[8px] rounded-lg w-full"
                 required
                 minLength={2}
+                value={link}
+                onChange={(e) => setLink(e.target.value)}
               />
             </div>
-            <p className="text-[12px] mx-auto mt-[-10px] mb-[8px]">Example : https://www.facebook.com/@username/</p>
+            <p className="text-[12px] mx-auto mt-[-10px] mb-[8px]">
+              Example : https://www.facebook.com/@username/
+            </p>
           </div>
           {/* Countries */}
           <div className="flex gap-1 items-center mb-[16px] ml-[-15px] lg:ml-0 ">
@@ -108,8 +151,10 @@ export const AddSite = () => {
                 type="number"
                 className="py-[6px] sm:py-[8px] text-center w-[80px] sm:w-[120px] rounded-lg border-[2px] border-gray-300"
                 required
-                minLength={2}
+                minLength={4}
                 disabled={!switchBtn ? true : false}
+                value={total_clicks}
+                onChange={(e) => setTotalClicks(e.target.value)}
               />
             </div>
             <div
@@ -143,8 +188,10 @@ export const AddSite = () => {
                 type="number"
                 className="py-[6px] sm:py-[8px] text-center w-[80px] sm:w-[120px] rounded-lg border-[2px] border-gray-300"
                 required
-                minLength={2}
+                minLength={4}
                 disabled={!switchBtnTwo ? true : false}
+                value={daily_clicks}
+                onChange={(e) => setDailyClicks(e.target.value)}
               />
             </div>
             <div
@@ -174,22 +221,29 @@ export const AddSite = () => {
                 type="number"
                 className="py-[8px] text-center w-[70px] rounded-lg border-[2px] border-gray-300"
                 required
-                minLength={2}
+                minLength={4}
+                value={cost_per_click}
+                onChange={(e) => setCostPerClick(e.target.value)}
               />
             </div>
             <p className="text-[12px] font-normal w-[20%]">Points Per Click</p>
           </div>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-[8px] w-[50%] mx-auto lg:w-[200px]">
-            <button className="text-white bg-[#007BFF99] ml-0 lg:ml-[-30px] h-[45px] rounded-lg">
+            <button
+              type="submit"
+              className="text-white bg-[#007BFF99] ml-0 lg:ml-[-30px] h-[45px] rounded-lg"
+            >
               Save
             </button>
-            <button className="text-black underline bg-[#FF202099] rounded-lg">
+            <Link
+              to="/website"
+              className="text-black underline flex justify-center items-center bg-[#FF202099] rounded-lg"
+            >
               Cancel
-            </button>
+            </Link>
           </div>
         </form>
       </div>
     </div>
   );
 };
-
